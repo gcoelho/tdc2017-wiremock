@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/hpe.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="css/theme/images/hpe_img_01.jpg">
+					<img class="logo" src="css/theme/images/hpe_pri_grn_pos_rgb.png">
+					<h2><strong>RevealJS</strong></h2>
+					<h3>Guilherme Lazzari</h3>
+					<p>
+						<small>July 28, 2016</small>
+					</p>
+				</section>
+
+				<section>
+					<h2><strong>Title and content layout</strong></h2>
+					<p>Bla bla bla</p>
+					<ul>
+						<li>No order here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+						<li>Or here</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2><strong>LaTeX formulas</strong></h2>
+					<p>The probability of getting \(k\) heads when flipping \(n\) coins is</p>
+					</br>
+					\[P(E)   = {n \choose k} p^k (1-p)^{ n-k} \]
+				</section>
+
+				<section data-background="rgb(66,85,99)" class="quote">
+					<h2><strong>"Type quote here and include quotation marks before and after text."</strong></h2>
+					<h4>Quoted person’s name</h4>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				center: false,
+
+				math: {
+					mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

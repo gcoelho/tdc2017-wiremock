@@ -1,0 +1,89 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+
+
+// HPE Colors
+$hpeGreen:      rgb(1,169,130);
+$hpeBronze:     rgb(128,116,110);
+$hpeSlate:      rgb(66,85,99);
+$hpeTurquoise:  rgb(42,210,201);
+$hpePurple:     rgb(97,71,103);
+$hpeOrange:     rgb(255,141,109);
+$hpeDarkSteel:  rgb(95,122,118);
+$hpeGray:       rgb(198,201,202);
+$hpeDarkGray:   rgb(128,130,133);
+
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Arimo', sans-serif;
+$mainColor: black;
+$headingFont: 'Arimo', sans-serif;
+$headingColor: black;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: white;
+$linkColor: $hpeGreen;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+
+
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal ol,
+.reveal ul {
+  list-style-type: none;
+  margin: 0px;
+}
+
+.reveal ul ul,
+.reveal ul ul ul {
+  list-style-type: none;
+}
+
+.reveal ul  > li:before,
+.reveal ul ul  > li:before,
+.reveal ul ul ul > li:before {
+  content: "– "
+}
+
+.reveal section img {
+    margin: none;
+    background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.logo {
+    height: 170px;
+    width: auto;
+}
+
+.quote h2,
+.quote h4 {
+    color: white;
+}
+

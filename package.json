@@ -1,0 +1,12 @@
+{
+  "name": "tdc2017-wiremock",
+  "version": "1.0.0",
+  "description": "The Developers Conference 2017 POA - Wiremock",
+  "scripts": {
+    "export-localhost": "decktape reveal http://localhost:8000/ slides.pdf",
+    "export-help": "decktape -h"
+  },
+  "dependencies": {
+    "decktape": "^2.4.3"
+  }
+}
