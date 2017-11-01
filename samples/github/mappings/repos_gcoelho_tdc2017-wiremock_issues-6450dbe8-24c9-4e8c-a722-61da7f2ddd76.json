@@ -1,0 +1,36 @@
+{
+  "id" : "6450dbe8-24c9-4e8c-a722-61da7f2ddd76",
+  "name" : "repos_gcoelho_tdc2017-wiremock_issues",
+  "request" : {
+    "url" : "/repos/gcoelho/tdc2017-wiremock/issues",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[\n\n]\n",
+    "headers" : {
+      "Date" : "Wed, 01 Nov 2017 18:08:33 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Server" : "GitHub.com",
+      "Status" : "200 OK",
+      "X-RateLimit-Limit" : "60",
+      "X-RateLimit-Remaining" : "52",
+      "X-RateLimit-Reset" : "1509563024",
+      "Cache-Control" : "public, max-age=60, s-maxage=60",
+      "Vary" : [ "Accept", "Accept-Encoding" ],
+      "ETag" : "\"98f0c1b396a4e5d54f4d5fe561d54b44\"",
+      "X-GitHub-Media-Type" : "github.v3; format=json",
+      "Access-Control-Expose-Headers" : "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "Access-Control-Allow-Origin" : "*",
+      "Content-Security-Policy" : "default-src 'none'",
+      "Strict-Transport-Security" : "max-age=31536000; includeSubdomains; preload",
+      "X-Content-Type-Options" : "nosniff",
+      "X-Frame-Options" : "deny",
+      "X-XSS-Protection" : "1; mode=block",
+      "X-Runtime-rack" : "0.026577",
+      "X-GitHub-Request-Id" : "F35C:1B54E:1977E9:2124C0:59FA0DA0"
+    }
+  },
+  "uuid" : "6450dbe8-24c9-4e8c-a722-61da7f2ddd76",
+  "persistent" : true
+}

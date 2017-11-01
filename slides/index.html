@@ -110,13 +110,47 @@
 				<h4>Linus Torvalds</h4>
 			</section>
 
-			<section data-background="rgb(66,85,99)" class="quote">
+			<section data-background="rgb(66,85,99)" class="quote" style="text-align: center">
 				<h2>
 					<strong>WireMock Demo</strong>
 				</h2>
-				Iniciar a demo com o trabalho desenvolvido rodando o WireMock Exemplo bobinho rodando o WireMock para graver requisição contra
-				o Google Deixar um exemplo mais “completo” com falhas etc pronto e só rodar o WireMock apontando para ele A aplicação
-				que vamos usar nesse caso é o CURL SEM FRESCURAS AQUI!!!!
+				<img src="images/demo.jpg">
+			</section>
+
+
+			<!-- Iniciar a demo com o trabalho desenvolvido rodando o WireMock Exemplo bobinho rodando o WireMock para graver requisição contra
+			o Google Deixar um exemplo mais “completo” com falhas etc pronto e só rodar o WireMock apontando para ele A aplicação
+			que vamos usar nesse caso é o CURL SEM FRESCURAS AQUI!!!! -->
+			<section data-markdown>
+				<script type="text/template">
+					## WireMock Record and Playback
+					- Web interface (http://localhost:8080/__admin/recorder)
+					- Java API
+					- WireMock REST API
+
+					Allow customizing what to be recorded
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					## Mocking GitHub API
+					- Use case: developing an app to get statistics of a GH repository
+						- Mocked a few APIs (summary info, issues and commits)
+						- Mocked error situations
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					## Mocking GitHub API
+					- Start WireMock recorder UI pointing to https://api.github.com
+						- Watch out for internal proxies! (--proxy-via)
+					- Send requests using curl (or any other app)
+					- Stop recorder, mocks saved
+					- Start playback, develop your app
+					- Enhance mocks capturing new ones or hand writing your owns
+				</script>
 			</section>
 
 			<section data-background="rgb(66,85,99)" class="quote">
@@ -217,24 +251,42 @@
 				</ul>
 			</section>
 
-			<!-- Slides mestres -->
+			<section data-markdown>
+				<script type="text/template">
+					## References
+
+					- [Slides / Sample code](https://github.com/gcoelho/tdc2017-wiremock)
+					- [WireMock](http://wiremock.org/)
+				</script>
+			</section>
+
 			<section>
-				<h2>
-					<strong>Title</strong>
-				</h2>
-				<p>Paragraph</p>
-				<ul>
-					<li>Item 1</li>
-				</ul>
+				<h2>Thanks!!</h2>
+				<table>
+					<tr>
+						<td style="text-align:left;vertical-align:center;">
+							Gustavo Coelho
+							<br>Software Engineer @ Hewlett Packard Enterprise
+							<p style="font-size:20px">
+								<br>Email: gcoelho@gcoelho.com
+								<br>Twitter: @gafcoelho
+								<br>GitHub: github.com/gcoelho
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td style="text-align:right;vertical-align:center;">
+							Luiz Svoboda
+							<br>Software Engineer @ Hewlett Packard Enterprise
+							<p style="font-size:20px">
+								<br>Email: luizek@gmail.com
+								<br>Twitter: @luizsvoboda
+								<br>GitHub: github.com/lhsvobodaj
+							</p>
+						</td>
+					</tr>
+				</table>
 			</section>
-
-			<section data-background="rgb(66,85,99)" class="quote">
-				<h2>
-					<strong>Sessao</strong>
-				</h2>
-				<h4>sub-titulo</h4>
-			</section>
-
 		</div>
 	</div>
 

@@ -3,7 +3,8 @@ Slides presented at The Developers Conference 2017 Porto Alegre, RS - Brazil
 DevTest Track http://www.thedevelopersconference.com.br/tdc/2017/portoalegre/trilha-devtest
 
 ## References
-[description](http://link/)
+[WireMock](http://wiremock.org/)
+[Maven Central WireMock](https://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.github.tomakehurst%22)
 
 ## Authors
 **Gustavo Coelho**
