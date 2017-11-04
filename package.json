@@ -2,6 +2,11 @@
   "name": "tdc2017-wiremock",
   "version": "1.0.0",
   "description": "The Developers Conference 2017 POA - Wiremock",
+  "license": "CC-BY-NC-SA-4.0",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:gcoelho/tdc2017-wiremock.git"
+  },
   "scripts": {
     "export-localhost": "decktape reveal http://localhost:8000/ slides.pdf",
     "export-help": "decktape -h"
