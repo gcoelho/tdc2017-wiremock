@@ -1,11 +1,10 @@
 /**
- * A simple theme for reveal.js presentations, similar
- * to the default theme. The accent color is darkblue.
+ * Theme for HPE presentations.
+ * 
+ * Changes should be done on theme/source/hpe.scss file, not hpe.css.
+ * Refer to https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
  *
- * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
- * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-
 
 // Default mixins and settings -----------------
 @import "../template/mixins";
@@ -13,7 +12,7 @@
 // ---------------------------------------------
 
 // Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i);
 
 
 // HPE Colors
@@ -41,16 +40,12 @@ $linkColorHover: lighten( $linkColor, 20% );
 $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 
 
-
-
-
-
 // Theme template ------------------------------
 @import "../template/theme";
 // ---------------------------------------------
 
 .reveal .slides {
-  text-align: left;
+  text-align: center;
 }
 
 .reveal ol,
@@ -67,8 +62,31 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 .reveal ul  > li:before,
 .reveal ul ul  > li:before,
 .reveal ul ul ul > li:before {
-  content: "– "
+  content: "– ";
 }
+
+.reveal h2 {
+  font-weight: bold;
+  font-size: 58px;
+}
+
+.breakslide {
+  background-color: $hpeSlate;
+}
+
+.breakslide h1 {
+  font-weight: bold;
+  font-size: 58px;
+  color: white;
+}
+
+.breakslide h2 {
+  font-weight: normal;
+  font-size: 40px;
+  color: white;
+}
+
+/**
 
 .reveal section img {
     margin: none;
@@ -82,8 +100,4 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
     width: auto;
 }
 
-.quote h2,
-.quote h4 {
-    color: white;
-}
-
+*/

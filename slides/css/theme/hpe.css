@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /**
- * A simple theme for reveal.js presentations, similar
- * to the default theme. The accent color is darkblue.
+ * Theme for HPE presentations.
+ * 
+ * Changes should be done on theme/source/hpe.scss file, not hpe.css.
+ * Refer to https://en.wikipedia.org/wiki/Sass_(stylesheet_language)
  *
- * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
- * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i);
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
@@ -292,7 +292,7 @@ body {
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
 
 .reveal .slides {
-  text-align: left; }
+  text-align: center; }
 
 .reveal ol,
 .reveal ul {
@@ -308,16 +308,35 @@ body {
 .reveal ul ul ul > li:before {
   content: "– "; }
 
+.reveal h2 {
+  font-weight: bold;
+  font-size: 58px; }
+
+.breakslide {
+  background-color: #425563; }
+
+.breakslide h1 {
+  font-weight: bold;
+  font-size: 58px;
+  color: white; }
+
+.breakslide h2 {
+  font-weight: normal;
+  font-size: 40px;
+  color: white; }
+
+/**
+
 .reveal section img {
-  margin: none;
-  background: none;
-  border: none;
-  box-shadow: none; }
+    margin: none;
+    background: none;
+	border: none;
+	box-shadow: none;
+}
 
 .logo {
-  height: 170px;
-  width: auto; }
+    height: 170px;
+    width: auto;
+}
 
-.quote h2,
-.quote h4 {
-  color: white; }
+*/
