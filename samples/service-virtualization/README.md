@@ -33,11 +33,33 @@ The virtualization environment is composed of a virtual machine running Ubuntu S
 
 * Services running as containers
   * NGINX: configured as a reverse proxy.
+    ```bash
+    docker run -d -v /root/nginx/certs:/etc/nginx/certs \
+      -v /root/nginx/conf.d:/etc/nginx/conf.d --name nginx --network=host nginx:1.13.5
+    ```
   * WireMock: allows the virtualization of any REST service.
+    ```bash
+    docker run -d -v /root/wiremock/cluster-8443:/opt/wiremock/cluster-8443 \
+    --network=host --name=cluster-8443 lhsvobodaj/wiremock \
+    --root-dir=/opt/wiremock/cluster-8443 --port=8080 --https-port=8443
+    ```
 
 ![Overall Architecture](img/environment-architecture.png)
 
-## Request Routing
+## Use Case #1 - Integration Test Environment
+The idea is to have a stable environment to avoid spurious failures in our integration testing jobs.
+
+**TODO**
+
+## Use Case #2 - Scale Environment
+
+**TODO**
+
+Numbers of a Oneview VM compared to a WireMock container running with the same set of files (ideally providing the same set of features)
+
+## Use Case #3 - SimpliVity Support Development
+
+### Request Routing
 Using NGINX as a reverse proxy, it is possible to send the HTTP request to a specific proxied server. In this case, the request is routed according to the request hostname. The domain name chosen to host our mocked environment is **simplivity.ovgd**. Thus, the `server_name` field in the NGINX configuration file is defined using a regular expression as `cluster-<PORT>-host<ID>.simplivity.ovgd`.
 
 According to the provided hostname, the request is routed to the server running on the port defined by the `<PORT>` portion of the address. See the NGINX virtual server configuration below:
@@ -54,5 +76,10 @@ server {
 ```
 ![Request Routing](img/nginx-routing.png)
 
-## How to use the environment?
-**TODO**
+### How to use the environment?
+* Add the VM IP address as a DNS server in your machine (or on the machine that needs to access this environment);
+* If you need to simulate a new SimpliVity cluster, copy the WireMock folders `mappings` and `__files` to the VM and place them inside a common directory;
+* Start a new WireMock container using the just created directory as the WireMock root dir (`--root-dir`);
+> Pay attention to use a different HTTP/HTTPS port(s).
+
+Access your new SimpliVity cluster using the hostname **cluster-WXYZ-host1.simplivity.ovgd**.
