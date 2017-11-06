@@ -30,13 +30,10 @@
 
 			<section data-markdown>
 				<script type="text/template">
-					### Contextualizar o projeto
-					- Apresentar o produto global dashboard Apresentar o status atual do nosso ambiente de CI
-					- Apresentar o problema com o ambiente
-					- Falhas recorrentes de builds causadas por problemas de infra Criação do CM para “manutenção” da infraestrutura (não resolveu o problema)
-					- Incluir diagrama mostrando como é utilizado Utilização de pacote XYZ (talvez seja superserver) para mockar testes de REST dentro do próprio teste
-					- Incluir um exemplo mostrando como fica o código
-					- Adicionar o que mais acharmos relevante
+					### Some background ...
+					- Brief overview of what we do
+					- How our CI environment looks like
+					- What issues we have and how can we fix them
 				</script>
 			</section>
 
@@ -60,29 +57,42 @@
 
 			<section data-markdown>
 				<script type="text/template">
+					### How our CI environment looks like
+					- xxx
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### Issues we have and how can we fix them
+					- Apresentar o problema com o ambiente
+					- Falhas recorrentes de builds causadas por problemas de infra Criação do CM para “manutenção” da infraestrutura (não resolveu o problema)
+					- Incluir diagrama mostrando como é utilizado Utilização de pacote XYZ (talvez seja superserver) para mockar testes de REST dentro do próprio teste
+					- Incluir um exemplo mostrando como fica o código
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
 					### Automated Testing Stability and Team Confidence
 					<img src="images/testing-vs-confidence.png" width="60%">
 				</script>
 			</section>
 
-			<section>
-				<h2>
-					Integration Testing
-				</h2>
-				Desired characteristics:
-				<ul>
-					<li>Stability Test must be reliable!</li>
-					<li>Speed I want to know as quickly as possible that I broke something!</li>
-				</ul>
-				Important aspects to ensure test stability:
-				<ul>
-					<li>Environment-agnostic tests: tests should be independent and self-contained.</li>
-					<li>Test data: tests failing because expected data was not available in the system.</li>
-				</ul>
-				Speed
-				<ul>
-					<li>Depending on external components can be slow (ex. requests sent to OneView)</li>
-				</ul>
+			<section data-markdown>
+				<script type="text/template">
+					### Integration Testing
+					Desired characteristics
+					- Stability Test must be reliable!
+					- Speed I want to know as quickly as possible that I broke something!
+					
+					Important aspects to ensure test stability
+					- Environment-agnostic tests: tests should be independent and self-contained
+					- Test data: tests failing because expected data was not available in the system
+					
+					Speed
+					- Depending on external components can be slow (ex. requests sent to OneView)
+				</script>
 			</section>
 
 			<section class="breakslide">
