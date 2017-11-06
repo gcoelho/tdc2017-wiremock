@@ -25,16 +25,22 @@ To meet our use case, we developed the following extensions:
 
 ## How to enable the extension
 
+1. Build the extension project with [Maven](https://maven.apache.org/):
+```bash
+mvn clean compile
+```
+
+2. Execute WireMock enabling the extension (`--extensions`):
 ```bash
 java -cp "wiremock-standalone-2.10.1.jar:<path>/tdc2017-wiremock/samples/id-transformer/target/classes" \
   com.github.tomakehurst.wiremock.standalone.WireMockServerRunner \
   --extensions com.hpe.wiremock.ResourceIdRequestMatcher,com.hpe.wiremock.ResourceIdResponseTransformer \
   --root-dir <path>/tdc2017-wiremock/samples/id-transformer/src/test/resources/oneview
 ```
-> Replace the `<path>` part of the command by the path to the folder where the repo has been cloned.
+> Remeber to replace the `<path>` part of the command by the path to the folder where the repo has been cloned.
 
 Once the WireMock server is running, you can issue the following REST request:
 ```bash
-curl -XGET localhost:8080/rest/server-hardware
+curl localhost:8080/rest/server-hardware
 ```
-Looking at the WireMock console, you should see all the resource identifiers that were found, and the generated UUIDs that will replace the original ones in the response body.
+In the WireMock console, you should see all the resource identifiers that were found in the original response, and the generated UUIDs that will replace the original ones in the response body.
