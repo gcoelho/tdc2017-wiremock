@@ -1,0 +1,1375 @@
+{
+  "uri": "/rest/server-hardware?start=0&count=50",
+  "total": 20,
+  "start": 0,
+  "prevPageUri": null,
+  "type": "server-hardware-list-4",
+  "category": "server-hardware",
+  "count": 20,
+  "created": "2017-10-31T16:11:21.622Z",
+  "eTag": "1509466281622",
+  "members": [
+    {
+      "virtualUuid": "e7fd7410-bc0d-41f5-b939-6bf4fa44a316",
+      "virtualSerialNumber": "VCGTBXE00M",
+      "uuid": "30303437-3933-4753-4831-30305835524E",
+      "uri": "/rest/server-hardware/30303437-3933-4753-4831-30305835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 2045360057,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": "Pending",
+          "installedStateTimestamp": "2017-01-23T14:26:06Z"
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/e7fd7410-bc0d-41f5-b939-6bf4fa44a316",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/96AE2DFC-5F00-494D-BAAC-76E199818ADE",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:55.389Z",
+      "model": "ProLiant BL460c Gen9",
+      "memoryMb": 8192,
+      "locationUri": "/rest/enclosures/09SGH100X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "2.30",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983575389",
+      "type": "server-hardware-4",
+      "name": "Encl1, bay 4",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:39:03.434Z",
+      "description": null,
+      "mpFirmwareVersion": "2.50 Jul 02 2015",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.4"
+          }
+        ],
+        "mpHostName": "172.18.6.4"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "740039-001",
+      "position": 4,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "12-Core Intel(R) Corporation Xeon @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I36 08/26/2014",
+      "serialNumber": "SGH100X5RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "37333036-3831-4753-4831-30305838524E",
+      "uri": "/rest/server-hardware/37333036-3831-4753-4831-30305838524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1045832480,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen8",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": "Uninitialized",
+          "installedStateTimestamp": "2017-01-23T14:28:20Z"
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/b56e8c50-2f6c-4046-b524-7402e207f22d",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/093C07D2-39E8-4250-B90D-A91E8AD6A5CD",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:45.365Z",
+      "model": "ProLiant BL460c Gen8",
+      "memoryMb": 32768,
+      "locationUri": "/rest/enclosures/09SGH100X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983565365",
+      "type": "server-hardware-4",
+      "name": "Encl1, bay 3",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:39:03.443Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.3"
+          }
+        ],
+        "mpHostName": "172.18.6.3"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "603718-C21",
+      "position": 3,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "Intel(R) Xeon(R) Processor E5620 @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I31 09/30/2011",
+      "serialNumber": "SGH100X8RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "31393736-3831-4753-4831-30305835524E",
+      "uri": "/rest/server-hardware/31393736-3831-4753-4831-30305835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1300563335,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL660c Gen8",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/1F62E4FE-C968-4DE7-974D-AF6E63440D73",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:39.637Z",
+      "model": "ProLiant BL660c Gen8",
+      "memoryMb": 16384,
+      "locationUri": "/rest/enclosures/09SGH100X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "FullHeight",
+      "eTag": "1500983559637",
+      "type": "server-hardware-4",
+      "name": "Encl1, bay 1",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:39:03.443Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.1"
+          }
+        ],
+        "mpHostName": "172.18.6.1"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "679118-B21",
+      "position": 1,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 8,
+      "processorCount": 4,
+      "processorSpeedMhz": 2000,
+      "processorType": "Quad-Core Intel Xeon @ 2.0GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I32 05/30/2012",
+      "serialNumber": "SGH100X5RN"
+    },
+    {
+      "virtualUuid": "0d70e692-812a-40b4-ba45-68b6ddd399c0",
+      "virtualSerialNumber": "VCGTBXE00U",
+      "uuid": "31393736-3831-4753-4831-30305837524E",
+      "uri": "/rest/server-hardware/31393736-3831-4753-4831-30305837524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1588825158,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL660c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": "SPPBootFailed",
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/0d70e692-812a-40b4-ba45-68b6ddd399c0",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/E987F1C5-D22A-41B0-AFDE-896BDEA4B2FE",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:55.487Z",
+      "model": "ProLiant BL660c Gen9",
+      "memoryMb": 16384,
+      "locationUri": "/rest/enclosures/09SGH100X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "2.30",
+      "formFactor": "FullHeight",
+      "eTag": "1500983575487",
+      "type": "server-hardware-4",
+      "name": "Encl1, bay 2",
+      "state": "ProfileError",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:39:03.443Z",
+      "description": null,
+      "mpFirmwareVersion": "2.50 Jul 02 2015",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.2"
+          }
+        ],
+        "mpHostName": "172.18.6.2"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "679118-B21",
+      "position": 2,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 8,
+      "processorCount": 4,
+      "processorSpeedMhz": 2000,
+      "processorType": "Quad-Core Intel Xeon @ 2.0GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I32 08/03/2014",
+      "serialNumber": "SGH100X7RN"
+    },
+    {
+      "virtualUuid": "01e9f4a5-e88c-4422-8bf5-b21c8a2f765b",
+      "virtualSerialNumber": "VCGTBXE00Q",
+      "uuid": "30303437-3933-4753-4831-30315835524E",
+      "uri": "/rest/server-hardware/30303437-3933-4753-4831-30315835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1532714319,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": "Pending",
+          "installedStateTimestamp": "2017-01-23T14:32:45Z"
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/01e9f4a5-e88c-4422-8bf5-b21c8a2f765b",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/CB752D17-4068-4AD1-92C6-22227C3EE68D",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:30.465Z",
+      "model": "ProLiant BL460c Gen9",
+      "memoryMb": 8192,
+      "locationUri": "/rest/enclosures/09SGH102X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983550465",
+      "type": "server-hardware-4",
+      "name": "Encl2, bay 1",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:41:30.105Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.9"
+          }
+        ],
+        "mpHostName": "172.18.6.9"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "740039-001",
+      "position": 1,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "12-Core Intel(R) Corporation Xeon @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I36 08/26/2014",
+      "serialNumber": "SGH101X5RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "31393736-3831-4753-4831-30315837524E",
+      "uri": "/rest/server-hardware/31393736-3831-4753-4831-30315837524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1991364929,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL660c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/90B7753E-00B3-418B-9735-EFF0DFEB0EAA",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:22.899Z",
+      "model": "ProLiant BL660c Gen9",
+      "memoryMb": 16384,
+      "locationUri": "/rest/enclosures/09SGH102X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "FullHeight",
+      "eTag": "1500983542899",
+      "type": "server-hardware-4",
+      "name": "Encl2, bay 3",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:41:30.157Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.10"
+          }
+        ],
+        "mpHostName": "172.18.6.10"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "679118-B21",
+      "position": 3,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 8,
+      "processorCount": 4,
+      "processorSpeedMhz": 2000,
+      "processorType": "Quad-Core Intel Xeon @ 2.0GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I32 08/03/2014",
+      "serialNumber": "SGH101X7RN"
+    },
+    {
+      "virtualUuid": "8b6b9a07-d87b-449c-88a3-0759be3bee73",
+      "virtualSerialNumber": "VCGTBXE00S",
+      "uuid": "30303437-3933-4753-4831-30325835524E",
+      "uri": "/rest/server-hardware/30303437-3933-4753-4831-30325835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1532714319,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": "Pending",
+          "installedStateTimestamp": "2017-01-23T14:35:25Z"
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/8b6b9a07-d87b-449c-88a3-0759be3bee73",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/CB752D17-4068-4AD1-92C6-22227C3EE68D",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:33.802Z",
+      "model": "ProLiant BL460c Gen9",
+      "memoryMb": 8192,
+      "locationUri": "/rest/enclosures/09SGH102X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983553802",
+      "type": "server-hardware-4",
+      "name": "Encl2, bay 7",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:41:30.343Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.12"
+          }
+        ],
+        "mpHostName": "172.18.6.12"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "740039-001",
+      "position": 7,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "12-Core Intel(R) Corporation Xeon @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I36 08/26/2014",
+      "serialNumber": "SGH102X5RN"
+    },
+    {
+      "virtualUuid": "5cdc2a31-72bd-4ba9-94a8-05187a68a8ce",
+      "virtualSerialNumber": "VCGTBXE00R",
+      "uuid": "30303437-3933-4753-4831-30335835524E",
+      "uri": "/rest/server-hardware/30303437-3933-4753-4831-30335835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1532714319,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/5cdc2a31-72bd-4ba9-94a8-05187a68a8ce",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/CB752D17-4068-4AD1-92C6-22227C3EE68D",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:30.456Z",
+      "model": "ProLiant BL460c Gen9",
+      "memoryMb": 8192,
+      "locationUri": "/rest/enclosures/09SGH102X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983550456",
+      "type": "server-hardware-4",
+      "name": "Encl2, bay 9",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:41:30.574Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.13"
+          }
+        ],
+        "mpHostName": "172.18.6.13"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "740039-001",
+      "position": 9,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "12-Core Intel(R) Corporation Xeon @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I36 08/26/2014",
+      "serialNumber": "SGH103X5RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "31393736-3831-4753-4831-30325837524E",
+      "uri": "/rest/server-hardware/31393736-3831-4753-4831-30325837524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1991364929,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL660c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/90B7753E-00B3-418B-9735-EFF0DFEB0EAA",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:24.234Z",
+      "model": "ProLiant BL660c Gen9",
+      "memoryMb": 16384,
+      "locationUri": "/rest/enclosures/09SGH102X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "FullHeight",
+      "eTag": "1500983544234",
+      "type": "server-hardware-4",
+      "name": "Encl2, bay 5",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:41:30.704Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.11"
+          }
+        ],
+        "mpHostName": "172.18.6.11"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "679118-B21",
+      "position": 5,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 8,
+      "processorCount": 4,
+      "processorSpeedMhz": 2000,
+      "processorType": "Quad-Core Intel Xeon @ 2.0GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I32 08/03/2014",
+      "serialNumber": "SGH102X7RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "30303437-3933-4753-4831-30345835524E",
+      "uri": "/rest/server-hardware/30303437-3933-4753-4831-30345835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1532714319,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/CB752D17-4068-4AD1-92C6-22227C3EE68D",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:24.254Z",
+      "model": "ProLiant BL460c Gen9",
+      "memoryMb": 8192,
+      "locationUri": "/rest/enclosures/09SGH102X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983544254",
+      "type": "server-hardware-4",
+      "name": "Encl2, bay 15",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:41:31.226Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.14"
+          }
+        ],
+        "mpHostName": "172.18.6.14"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "740039-001",
+      "position": 15,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "12-Core Intel(R) Corporation Xeon @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I36 08/26/2014",
+      "serialNumber": "SGH104X5RN"
+    },
+    {
+      "virtualUuid": "c27820e9-db04-4fbd-81fd-2021628b8da8",
+      "virtualSerialNumber": "VCGTBXE00O",
+      "uuid": "37333036-3831-4753-4831-30315838524E",
+      "uri": "/rest/server-hardware/37333036-3831-4753-4831-30315838524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1372785538,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen8",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": "Pending",
+          "installedStateTimestamp": "2017-01-23T14:30:32Z"
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/c27820e9-db04-4fbd-81fd-2021628b8da8",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/63753CE1-EA05-410F-9CAE-03E3FE8D876E",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:10.941Z",
+      "model": "ProLiant BL460c Gen8",
+      "memoryMb": 32768,
+      "locationUri": "/rest/enclosures/09SGH104X6J1",
+      "licensingIntent": "OneView",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983530941",
+      "type": "server-hardware-4",
+      "name": "Encl3, bay 1",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:44:39.891Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.15"
+          }
+        ],
+        "mpHostName": "172.18.6.15"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "603718-C21",
+      "position": 1,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "Intel(R) Xeon(R) Processor E5620 @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I31 09/30/2011",
+      "serialNumber": "SGH101X8RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "30303437-3933-4753-4831-30355835524E",
+      "uri": "/rest/server-hardware/30303437-3933-4753-4831-30355835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1532714319,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/CB752D17-4068-4AD1-92C6-22227C3EE68D",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:11.921Z",
+      "model": "ProLiant BL460c Gen9",
+      "memoryMb": 8192,
+      "locationUri": "/rest/enclosures/09SGH104X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983531921",
+      "type": "server-hardware-4",
+      "name": "Encl3, bay 2",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:44:40.013Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.16"
+          }
+        ],
+        "mpHostName": "172.18.6.16"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "740039-001",
+      "position": 2,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "12-Core Intel(R) Corporation Xeon @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I36 08/26/2014",
+      "serialNumber": "SGH105X5RN"
+    },
+    {
+      "virtualUuid": "c5be6e38-a3d0-4dcb-9dee-d335d73cc6a3",
+      "virtualSerialNumber": "VCGTBXE00K",
+      "uuid": "37333036-3831-4753-4831-30305836524E",
+      "uri": "/rest/server-hardware/37333036-3831-4753-4831-30305836524E",
+      "uidState": "Unsupported",
+      "status": "OK",
+      "signature": {
+        "serverHwChecksum": 518113234,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c G7",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/c5be6e38-a3d0-4dcb-9dee-d335d73cc6a3",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/D97E2763-C602-4EFC-9048-A24D15B5CCD4",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:51:59.601Z",
+      "model": "ProLiant BL460c G7",
+      "memoryMb": 32768,
+      "locationUri": "/rest/enclosures/09SGH104X6J1",
+      "licensingIntent": "OneView",
+      "intelligentProvisioningVersion": "n/a",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983519601",
+      "type": "server-hardware-4",
+      "name": "Encl3, bay 9",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:44:40.229Z",
+      "description": null,
+      "mpFirmwareVersion": "1.61 Jul 02 2013",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.3.1"
+          }
+        ],
+        "mpHostName": "172.18.3.1"
+      },
+      "mpModel": "iLO3",
+      "mpState": "OK",
+      "partNumber": "603718-B21",
+      "position": 9,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "Intel(R) Xeon(R) Processor E5620 @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I27 09/30/2010",
+      "serialNumber": "SGH100X6RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "31393736-3831-4753-4831-30335837524E",
+      "uri": "/rest/server-hardware/31393736-3831-4753-4831-30335837524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1991364929,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL660c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/90B7753E-00B3-418B-9735-EFF0DFEB0EAA",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:05.477Z",
+      "model": "ProLiant BL660c Gen9",
+      "memoryMb": 16384,
+      "locationUri": "/rest/enclosures/09SGH104X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "FullHeight",
+      "eTag": "1500983525477",
+      "type": "server-hardware-4",
+      "name": "Encl3, bay 3",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:44:40.329Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.17"
+          }
+        ],
+        "mpHostName": "172.18.6.17"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "679118-B21",
+      "position": 3,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 8,
+      "processorCount": 4,
+      "processorSpeedMhz": 2000,
+      "processorType": "Quad-Core Intel Xeon @ 2.0GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I32 08/03/2014",
+      "serialNumber": "SGH103X7RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "30303437-3933-4753-4831-30365835524E",
+      "uri": "/rest/server-hardware/30303437-3933-4753-4831-30365835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1532714319,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/CB752D17-4068-4AD1-92C6-22227C3EE68D",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:05.880Z",
+      "model": "ProLiant BL460c Gen9",
+      "memoryMb": 8192,
+      "locationUri": "/rest/enclosures/09SGH104X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983525880",
+      "type": "server-hardware-4",
+      "name": "Encl3, bay 10",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:44:40.738Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.18"
+          }
+        ],
+        "mpHostName": "172.18.6.18"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "740039-001",
+      "position": 10,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "12-Core Intel(R) Corporation Xeon @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I36 08/26/2014",
+      "serialNumber": "SGH106X5RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "37333036-3831-4753-4831-30305839524E",
+      "uri": "/rest/server-hardware/37333036-3831-4753-4831-30305839524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1594190710,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL465c Gen8",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/A0EA66DF-DBC0-4E55-95D5-7152D1B2F68C",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:05.608Z",
+      "model": "ProLiant BL465c Gen8",
+      "memoryMb": 32768,
+      "locationUri": "/rest/enclosures/09SGH106X6J1",
+      "licensingIntent": "OneView",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983525608",
+      "type": "server-hardware-4",
+      "name": "Encl4, bay 2",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:47:10.975Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.20"
+          }
+        ],
+        "mpHostName": "172.18.6.20"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "603718-D21",
+      "position": 2,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 8,
+      "processorCount": 2,
+      "processorSpeedMhz": 2700,
+      "processorType": "Intel(R) Xeon(R) E5-2680 @ 2.7GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "A26 09/30/2011",
+      "serialNumber": "SGH100X9RN"
+    },
+    {
+      "virtualUuid": "01a261e6-0a3c-4169-8cb8-8e79a2c4d882",
+      "virtualSerialNumber": "VCGTBXE00L",
+      "uuid": "31393736-3831-4753-4831-30315835524E",
+      "uri": "/rest/server-hardware/31393736-3831-4753-4831-30315835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 898322255,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL660c Gen8",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": "Pending",
+          "installedStateTimestamp": "2017-01-23T14:25:10Z"
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/01a261e6-0a3c-4169-8cb8-8e79a2c4d882",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/2ED73766-2A0F-4CFC-AC53-590F2761180E",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:26.170Z",
+      "model": "ProLiant BL660c Gen8",
+      "memoryMb": 16384,
+      "locationUri": "/rest/enclosures/09SGH106X6J1",
+      "licensingIntent": "OneView",
+      "intelligentProvisioningVersion": "2.30",
+      "formFactor": "FullHeight",
+      "eTag": "1500983546170",
+      "type": "server-hardware-4",
+      "name": "Encl4, bay 3",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:47:11.041Z",
+      "description": null,
+      "mpFirmwareVersion": "2.50 Jul 02 2015",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.21"
+          }
+        ],
+        "mpHostName": "172.18.6.21"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "679118-B21",
+      "position": 3,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 8,
+      "processorCount": 4,
+      "processorSpeedMhz": 2000,
+      "processorType": "Quad-Core Intel Xeon @ 2.0GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I32 05/30/2012",
+      "serialNumber": "SGH101X5RN"
+    },
+    {
+      "virtualUuid": "a2efa7e2-a97a-4098-9e16-311eb720825e",
+      "virtualSerialNumber": "VCGTBXE00P",
+      "uuid": "37333036-3831-4753-4831-30325838524E",
+      "uri": "/rest/server-hardware/37333036-3831-4753-4831-30325838524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1372785538,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen8",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": "NotInstalled",
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": "Pending",
+          "installedStateTimestamp": "2017-01-23T14:31:10Z"
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/a2efa7e2-a97a-4098-9e16-311eb720825e",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/63753CE1-EA05-410F-9CAE-03E3FE8D876E",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:15.917Z",
+      "model": "ProLiant BL460c Gen8",
+      "memoryMb": 32768,
+      "locationUri": "/rest/enclosures/09SGH106X6J1",
+      "licensingIntent": "OneView",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983535917",
+      "type": "server-hardware-4",
+      "name": "Encl4, bay 10",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:47:11.342Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.22"
+          }
+        ],
+        "mpHostName": "172.18.6.22"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "603718-C21",
+      "position": 10,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "Intel(R) Xeon(R) Processor E5620 @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I31 09/30/2011",
+      "serialNumber": "SGH102X8RN"
+    },
+    {
+      "virtualUuid": "d1ec9fba-ecde-4111-b028-a44b53bb78e5",
+      "virtualSerialNumber": "VCGTBXE00N",
+      "uuid": "37333036-3831-4753-4831-30315836524E",
+      "uri": "/rest/server-hardware/37333036-3831-4753-4831-30315836524E",
+      "uidState": "Unsupported",
+      "status": "OK",
+      "signature": {
+        "serverHwChecksum": 518113234,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c G7",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": "/rest/server-profiles/d1ec9fba-ecde-4111-b028-a44b53bb78e5",
+      "serverHardwareTypeUri": "/rest/server-hardware-types/D97E2763-C602-4EFC-9048-A24D15B5CCD4",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:05.031Z",
+      "model": "ProLiant BL460c G7",
+      "memoryMb": 32768,
+      "locationUri": "/rest/enclosures/09SGH106X6J1",
+      "licensingIntent": "OneView",
+      "intelligentProvisioningVersion": "n/a",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983525031",
+      "type": "server-hardware-4",
+      "name": "Encl4, bay 9",
+      "state": "ProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:47:11.406Z",
+      "description": null,
+      "mpFirmwareVersion": "1.61 Jul 02 2013",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.3.2"
+          }
+        ],
+        "mpHostName": "172.18.3.2"
+      },
+      "mpModel": "iLO3",
+      "mpState": "OK",
+      "partNumber": "603718-B21",
+      "position": 9,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "Intel(R) Xeon(R) Processor E5620 @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I27 09/30/2010",
+      "serialNumber": "SGH101X6RN"
+    },
+    {
+      "virtualUuid": null,
+      "virtualSerialNumber": "",
+      "uuid": "30303437-3933-4753-4831-30375835524E",
+      "uri": "/rest/server-hardware/30303437-3933-4753-4831-30375835524E",
+      "uidState": "Unsupported",
+      "status": "Warning",
+      "signature": {
+        "serverHwChecksum": 1532714319,
+        "personalityChecksum": 1957209924
+      },
+      "shortModel": "BL460c Gen9",
+      "serverSettings": {
+        "hpSmartUpdateToolStatus": {
+          "lastOperationTime": null,
+          "installState": null,
+          "serviceState": null,
+          "version": null,
+          "mode": null
+        },
+        "firmwareAndDriversInstallState": {
+          "installState": null,
+          "installedStateTimestamp": null
+        }
+      },
+      "serverProfileUri": null,
+      "serverHardwareTypeUri": "/rest/server-hardware-types/CB752D17-4068-4AD1-92C6-22227C3EE68D",
+      "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+      "modified": "2017-07-25T11:52:07.680Z",
+      "model": "ProLiant BL460c Gen9",
+      "memoryMb": 8192,
+      "locationUri": "/rest/enclosures/09SGH106X6J1",
+      "licensingIntent": "OneViewNoiLO",
+      "intelligentProvisioningVersion": "Unknown",
+      "formFactor": "HalfHeight",
+      "eTag": "1500983527680",
+      "type": "server-hardware-4",
+      "name": "Encl4, bay 1",
+      "state": "NoProfileApplied",
+      "stateReason": "NotApplicable",
+      "assetTag": "[Unknown]",
+      "category": "server-hardware",
+      "created": "2017-01-20T20:47:11.433Z",
+      "description": null,
+      "mpFirmwareVersion": "2.20 Nov 01 2014",
+      "mpHostInfo": {
+        "mpIpAddresses": [
+          {
+            "type": "Undefined",
+            "address": "172.18.6.19"
+          }
+        ],
+        "mpHostName": "172.18.6.19"
+      },
+      "mpModel": "iLO4",
+      "mpState": "OK",
+      "partNumber": "740039-001",
+      "position": 1,
+      "powerLock": false,
+      "powerState": "Off",
+      "processorCoreCount": 4,
+      "processorCount": 2,
+      "processorSpeedMhz": 2400,
+      "processorType": "12-Core Intel(R) Corporation Xeon @ 2.4GHz",
+      "refreshState": "NotRefreshing",
+      "romVersion": "I36 08/26/2014",
+      "serialNumber": "SGH107X5RN"
+    }
+  ],
+  "modified": "2017-10-31T16:11:21.622Z",
+  "nextPageUri": null
+}
