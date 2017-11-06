@@ -27,13 +27,15 @@ Below are the technologies used to build the virtualization environment:
 
 The virtualization environment is composed of a virtual machine running Ubuntu Server 16.04 with Dnsmasq and Docker services running as native processes, while the other tools that complete the setup (NGINX and WireMock) are running as containers.
 
-1. Services running on the host VM
-* Dnsmasq: provides DNS capabilities.
-* Docker: allows the environment to scale.
+* Services running on the host VM
+  * Dnsmasq: provides DNS capabilities.
+  * Docker: allows the environment to scale.
 
-2. Services running as containers
-* NGINX: configured as a reverse proxy.
-* WireMock: allows the virtualization of any REST service.
+* Services running as containers
+  * NGINX: configured as a reverse proxy.
+  * WireMock: allows the virtualization of any REST service.
+
+![Overall Architecture](img/environment-architecture.png)
 
 ## Request Routing
 Using NGINX as a reverse proxy, it is possible to send the HTTP request to a specific proxied server. In this case, the request is routed according to the request hostname. The domain name chosen to host our mocked environment is **simplivity.ovgd**. Thus, the `server_name` field in the NGINX configuration file is defined using a regular expression as `cluster-<PORT>-host<ID>.simplivity.ovgd`.
@@ -50,5 +52,7 @@ server {
     }
 }
 ```
+![Request Routing](img/nginx-routing.png)
 
-## 
+## How to use the environment?
+**TODO**
