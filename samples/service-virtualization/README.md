@@ -41,7 +41,7 @@ The virtualization environment is composed of a virtual machine running Ubuntu S
 Using NGINX as a reverse proxy, it is possible to send the HTTP request to a specific proxied server. In this case, the request is routed according to the request hostname. The domain name chosen to host our mocked environment is **simplivity.ovgd**. Thus, the `server_name` field in the NGINX configuration file is defined using a regular expression as `cluster-<PORT>-host<ID>.simplivity.ovgd`.
 
 According to the provided hostname, the request is routed to the server running on the port defined by the `<PORT>` portion of the address. See the NGINX virtual server configuration below:
-```bash
+```nginx
 server {
     listen 443 ssl;
     server_name "~^cluster-(?<port>\d{4})-host\d{1}\.simplivity\.ovgd$";
