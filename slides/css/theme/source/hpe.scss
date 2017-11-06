@@ -11,9 +11,6 @@
 @import "../template/settings";
 // ---------------------------------------------
 
-// Include theme-specific fonts
-@import url(https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i);
-
 
 // HPE Colors
 $hpeGreen:      rgb(1,169,130);
@@ -28,9 +25,9 @@ $hpeDarkGray:   rgb(128,130,133);
 
 
 // Override theme settings (see ../template/settings.scss)
-$mainFont: 'Arimo', sans-serif;
+$mainFont: Arial, Helvetica, sans-serif;
 $mainColor: black;
-$headingFont: 'Arimo', sans-serif;
+$headingFont: Arial, Helvetica, sans-serif;
 $headingColor: black;
 $headingTextShadow: none;
 $headingTextTransform: none;
