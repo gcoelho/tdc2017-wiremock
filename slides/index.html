@@ -20,35 +20,49 @@
 
 			<section data-background="css/theme/images/cover-image-01.jpg">
 				<img class="logo" src="css/theme/images/hpe_pri_grn_pos_rgb.png">
-				<h4 style="color:white;">
-					<strong>WireMock: Criação de um ambiente confiável e escalável para execução de testes de integração</strong>
-				</h4>
-				<h5 style="color:white;">Luiz Hermes Svoboda Junior</h5>
-				<h5 style="color:white;">Gustavo Coelho</h5>
+				<h1 style="color:white;">WireMock: Criação de um ambiente confiável e escalável para execução de testes de integração</h1>
+				<h2 style="color:white;">Luiz Hermes Svoboda Junior</h2>
+				<h2 style="color:white;">Gustavo Coelho</h2>
 				<p style="color:white;">
 					<small>November, 2017</small>
 				</p>
 			</section>
 
-			<section>
-				<h2>
-					Contextualizar o projeto
-				</h2>
-				<p>Apresentar o produto global dashboard Apresentar o status atual do nosso ambiente de CI Apresentar o problema com o ambiente
-					Falhas recorrentes de builds causadas por problemas de infra Criação do CM para “manutenção” da infraestrutura (não
-					resolveu o problema) Incluir diagrama mostrando como é utilizado Utilização de pacote XYZ (talvez seja superserver)
-					para mockar testes de REST dentro do próprio teste Incluir um exemplo mostrando como fica o código ADICIONAR O QUE MAIS
-					ACHARMOS RELEVANTE
-				</p>
+			<section data-markdown>
+				<script type="text/template">
+					### Contextualizar o projeto
+					- Apresentar o produto global dashboard Apresentar o status atual do nosso ambiente de CI
+					- Apresentar o problema com o ambiente
+					- Falhas recorrentes de builds causadas por problemas de infra Criação do CM para “manutenção” da infraestrutura (não resolveu o problema)
+					- Incluir diagrama mostrando como é utilizado Utilização de pacote XYZ (talvez seja superserver) para mockar testes de REST dentro do próprio teste
+					- Incluir um exemplo mostrando como fica o código
+					- Adicionar o que mais acharmos relevante
+				</script>
 			</section>
 
 			<section>
-				<h2>
-					Automated Testing Stability and Team Confidence
-				</h2>
-				<p>
-					<img src="images/testing-vs-confidence.png">
-				</p>
+				<h3>OneView Global Dashboard</h3>
+				<div>
+					<div style="float:left; width:50%;">
+						<img src="css/theme/images/ovgd.png" style="border:2px solid black">
+					</div>
+					<div style="float:left; width:50%;">
+						<ul style="font-size:25px">
+							<li>Helps IT staff troubleshoot alerts and view core inventory data across multiple HPE management systems</li>
+							<li>Provides an enhanced infrastructure view for more informed and faster decision-making</li>
+							<li>Smart search function that delivers access to devices of interest across data centers in seconds</li>
+							<li>Aggregates critical activates from multiple appliances into a single feed to quickly identify issues</li>
+							<li>Customizable inventory and compliance report for monitored assets</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### Automated Testing Stability and Team Confidence
+					<img src="images/testing-vs-confidence.png" width="60%">
+				</script>
 			</section>
 
 			<section>
@@ -116,7 +130,7 @@
 			que vamos usar nesse caso é o CURL SEM FRESCURAS AQUI!!!! -->
 			<section data-markdown>
 				<script type="text/template">
-					## WireMock Record and Playback
+					### WireMock Record and Playback
 					- Web interface (http://localhost:8080/__admin/recorder)
 					- Java API
 					- WireMock REST API
@@ -127,7 +141,7 @@
 
 			<section data-markdown>
 				<script type="text/template">
-					## Mocking GitHub API
+					### Mocking GitHub API
 					- Use case: developing an app to get statistics of a GH repository
 						- Mocked a few APIs (summary info, issues and commits)
 						- Mocked error situations
@@ -136,7 +150,7 @@
 
 			<section data-markdown>
 				<script type="text/template">
-					## Mocking GitHub API
+					### Mocking GitHub API
 					- Start WireMock recorder UI pointing to https://api.github.com
 						- Watch out for internal proxies! (--proxy-via)
 					- Send requests using curl (or any other app)
@@ -323,7 +337,9 @@
 		<div id="header">
 			<div id="header-left">HEADER-LEFT</div>
 			<div id="header-right">HEADER-RIGHT</div>
-			<div id="footer-left" style="font-size: 15px"><strong>Hewlett Packard</strong><br>Enterprise</div>
+			<div id="footer-left" style="font-size: 15px">
+				<strong>Hewlett Packard</strong>
+				<br>Enterprise</div>
 		</div>
 	</div>
 
