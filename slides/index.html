@@ -9,7 +9,9 @@
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/hpe.css">
-
+	
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 </head>
@@ -20,7 +22,7 @@
 
 			<section data-background="css/theme/images/cover-image-01.jpg">
 				<img style="width: 300px" src="css/theme/images/hpe-logo.png">
-				<h1 style="color:white;">WireMock: Criação de um ambiente confiável e escalável para execução de testes de integração</h1>
+				<h1 style="color:white;">WireMock: Deploying a reliable and scalable environment for integration testing</h1>
 				<h2 style="color:white;">Luiz Hermes Svoboda Junior</h2>
 				<h2 style="color:white;">Gustavo Coelho</h2>
 				<p style="color:white;">
@@ -57,8 +59,28 @@
 
 			<section data-markdown>
 				<script type="text/template">
+					### Technologies, teams and practices
+					- JavaScript stack
+						- HTML5, CSS, React / Redux, JavaScript
+						- NodeJS
+						- ElasticSearch
+					- Backend exposes a REST API, UI consumes it
+					- 3 teams in different geographies
+					- Unit, integration and scale testing
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
 					### How our CI environment looks like
-					- xxx
+					- Developer pushes to Gerrit
+					- Gerrit starts Jenkins jobs to run unit and integration tests
+						- Unit: Backend (Mocha) and UI (Enzyme / Karma)
+						- Integration: REST calls to backend API (Mocha)
+					- Jenkins jobs return +1 if tests complete successfully or -1 if fail
+
+					<i class="fa fa-arrow-circle-o-right"></i> 5 ~ 10 minutes feedback loop
+					
 				</script>
 			</section>
 
@@ -266,35 +288,37 @@
 
 			<section data-markdown>
 				<script type="text/template">
-					## References
+					### References
 
 					- [Slides / Sample code](https://github.com/gcoelho/tdc2017-wiremock)
 					- [WireMock](http://wiremock.org/)
+					- [Docker] (https://www.docker.com/)
+					- [NGINX] (https://www.nginx.com/)
 				</script>
 			</section>
 
 			<section>
-				<h2>Thanks!!</h2>
+				<h3>Thanks!!</h3>
 				<table>
 					<tr>
 						<td style="text-align:left;vertical-align:center;">
 							Gustavo Coelho
-							<br>Software Engineer @ Hewlett Packard Enterprise
+							<p style="font-size:30px">Software Engineer @ Hewlett Packard Enterprise</p>
 							<p style="font-size:20px">
-								<br>Email: gcoelho@gcoelho.com
-								<br>Twitter: @gafcoelho
-								<br>GitHub: github.com/gcoelho
+								<br><i class="fa fa-envelope"></i> gcoelho@gcoelho.com
+								<br><i class="fa fa-twitter"></i> gafcoelho
+								<br><i class="fa fa-github"></i> github.com/gcoelho
 							</p>
 						</td>
 					</tr>
 					<tr>
 						<td style="text-align:right;vertical-align:center;">
 							Luiz Svoboda
-							<br>Software Engineer @ Hewlett Packard Enterprise
+							<p style="font-size:30px">Software Engineer @ Hewlett Packard Enterprise</p>
 							<p style="font-size:20px">
-								<br>Email: luizek@gmail.com
-								<br>Twitter: @luizsvoboda
-								<br>GitHub: github.com/lhsvobodaj
+								<br>luizek@gmail.com <i class="fa fa-envelope"></i>
+								<br>luizsvoboda <i class="fa fa-twitter"></i>
+								<br>github.com/lhsvobodaj <i class="fa fa-github"></i>
 							</p>
 						</td>
 					</tr>
