@@ -1,0 +1,26 @@
+{
+  "id" : "7a9f7ca3-36ee-3305-a010-64fc71345d22",
+  "request" : {
+    "url" : "/rest/login-sessions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"userName\":\"administrator\",\"password\":\"hpvse123\",\"authLoginDomain\":\"Local\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-login-sessions-XArlZ.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:18 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=100",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "7a9f7ca3-36ee-3305-a010-64fc71345d22"
+}

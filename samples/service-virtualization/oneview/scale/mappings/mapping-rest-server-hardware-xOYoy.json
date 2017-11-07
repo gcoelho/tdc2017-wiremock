@@ -1,0 +1,22 @@
+{
+  "id" : "a437c82b-9b61-36fa-88f7-21cab8181d4e",
+  "request" : {
+    "url" : "/rest/server-hardware?start=0&count=50",
+    "method" : "GET"
+    },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-server-hardware-xOYoy.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:21 GMT",
+      "Server" : "Apache",
+      "ETag" : "1509466281622",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=96",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "a437c82b-9b61-36fa-88f7-21cab8181d4e"
+}

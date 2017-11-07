@@ -1,0 +1,21 @@
+{
+  "id" : "87b3222b-8879-303d-9d3f-38eb1f1fb849",
+  "request" : {
+    "url" : "/rest/version",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-version-UgRiY.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:20 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=99",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "87b3222b-8879-303d-9d3f-38eb1f1fb849"
+}

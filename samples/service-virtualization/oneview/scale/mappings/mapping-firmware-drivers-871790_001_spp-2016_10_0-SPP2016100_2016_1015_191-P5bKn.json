@@ -1,0 +1,21 @@
+{
+  "id" : "6417fc37-0dcb-328a-9424-2f555f329907",
+  "request" : {
+    "url" : "/rest/firmware-drivers/871790_001_spp-2016_10_0-SPP2016100_2016_1015_191",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-firmware-drivers-871790_001_spp-2016_10_0-SPP2016100_2016_1015_191-P5bKn.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:30 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=84",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "6417fc37-0dcb-328a-9424-2f555f329907"
+}

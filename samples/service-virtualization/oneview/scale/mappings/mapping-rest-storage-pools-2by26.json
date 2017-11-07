@@ -1,0 +1,22 @@
+{
+  "id" : "d632ea2a-91fe-3c86-9311-08e63bf5508a",
+  "request" : {
+    "url" : "/rest/storage-pools?start=0&count=250",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-storage-pools-2by26.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:38 GMT",
+      "Server" : "Apache",
+      "ETag" : "2017-10-31T16:11:38.752Z",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=78",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "d632ea2a-91fe-3c86-9311-08e63bf5508a"
+}

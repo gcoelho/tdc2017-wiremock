@@ -1,0 +1,21 @@
+{
+  "id" : "860bcfc8-830c-3503-9847-85907f7b23c2",
+  "request" : {
+    "url" : "/rest/appliance/network-interfaces",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-appliance-network-interfaces-GOrtq.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:20 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=98",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "860bcfc8-830c-3503-9847-85907f7b23c2"
+}

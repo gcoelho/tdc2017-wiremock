@@ -1,0 +1,21 @@
+{
+  "id" : "363315b4-dce6-36f4-9d26-6b32bcdb4dd4",
+  "request" : {
+    "url" : "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-enclosure-groups-779ccfce-d8ac-41b0-8930-df7a5dd248b5-I7Yld.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:26 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=92",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "363315b4-dce6-36f4-9d26-6b32bcdb4dd4"
+}

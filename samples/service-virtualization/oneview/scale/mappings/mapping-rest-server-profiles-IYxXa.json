@@ -1,0 +1,22 @@
+{
+  "id" : "a5d6c54c-ee50-37ce-8637-98c0a0198833",
+  "request" : {
+    "url" : "/rest/server-profiles?start=0&count=320",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-server-profiles-IYxXa.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:24 GMT",
+      "Server" : "Apache",
+      "ETag" : "20171031T161124.857Z",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=94",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "a5d6c54c-ee50-37ce-8637-98c0a0198833"
+}

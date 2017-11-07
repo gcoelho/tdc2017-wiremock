@@ -1,0 +1,21 @@
+{
+  "id" : "3a9633c1-dea3-363f-9dba-0b9d197bf21b",
+  "request" : {
+    "url" : "/rest/appliance/nodeinfo/version",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-nodeinfo-version-X22Zw.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:17 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=100",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "3a9633c1-dea3-363f-9dba-0b9d197bf21b"
+}

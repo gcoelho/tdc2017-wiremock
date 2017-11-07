@@ -1,0 +1,21 @@
+{
+  "id" : "44413e3b-9ce0-3840-aefa-78c0ac3da8a3",
+  "request" : {
+    "url" : "/rest/server-hardware/*/firmware?start=0&count=250",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-_-firmware-VcASZ.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:23 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=95",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "44413e3b-9ce0-3840-aefa-78c0ac3da8a3"
+}

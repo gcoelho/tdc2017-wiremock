@@ -1,0 +1,26 @@
+{
+  "id" : "8fe8da60-2b51-38ba-a48d-12bc9a9c7c4c",
+  "request" : {
+    "url" : "/rest/system",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 404,
+    "bodyFileName" : "body-rest-system-rr5wV.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:19 GMT",
+      "Server" : "Apache",
+      "Cache-Control" : "no-cache",
+      "Pragma" : "no-cache",
+      "Vary" : "Accept-Language,Accept",
+      "Content-Language" : "en",
+      "Expires" : "0",
+      "X-Frame-Options" : "SAMEORIGIN",
+      "Keep-Alive" : "timeout=15, max=99",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked",
+      "Content-Type" : "application/json; charset=UTF-8"
+    }
+  },
+  "uuid" : "8fe8da60-2b51-38ba-a48d-12bc9a9c7c4c"
+}

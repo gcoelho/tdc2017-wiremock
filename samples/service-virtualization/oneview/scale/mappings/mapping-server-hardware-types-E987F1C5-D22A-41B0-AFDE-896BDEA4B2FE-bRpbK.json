@@ -1,0 +1,22 @@
+{
+  "id" : "b06a0f79-3ed1-3ae5-add1-ecf57f6e7e21",
+  "request" : {
+    "url" : "/rest/server-hardware-types/E987F1C5-D22A-41B0-AFDE-896BDEA4B2FE",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-server-hardware-types-E987F1C5-D22A-41B0-AFDE-896BDEA4B2FE-bRpbK.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:27 GMT",
+      "Server" : "Apache",
+      "ETag" : "1485366592010",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=90",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "b06a0f79-3ed1-3ae5-add1-ecf57f6e7e21"
+}

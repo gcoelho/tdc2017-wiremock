@@ -1,0 +1,21 @@
+{
+  "id" : "42b1591f-df9d-3d43-8015-f511a6e73725",
+  "request" : {
+    "url" : "/rest/server-profile-templates?start=0&count=320",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-server-profile-templates-Sj8WX.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:29 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=85",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "42b1591f-df9d-3d43-8015-f511a6e73725"
+}

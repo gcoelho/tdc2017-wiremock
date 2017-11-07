@@ -1,0 +1,21 @@
+{
+  "id" : "0867268f-a22b-37d8-b82f-e5846a2b5c4c",
+  "request" : {
+    "url" : "/rest/certificates/ca",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 202,
+    "bodyFileName" : "body-certificates-ca-DNHCQ.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:41 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=73",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "0867268f-a22b-37d8-b82f-e5846a2b5c4c"
+}

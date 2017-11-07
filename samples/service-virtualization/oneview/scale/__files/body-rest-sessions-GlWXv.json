@@ -1,0 +1,1 @@
+{"errorSource":null,"nestedErrors":[],"details":"Missing mandatory header Session-ID from the request.","recommendedActions":["Please provide the missing parameter."],"data":{},"errorCode":"SERVLET_REQUEST_BINDING_ERROR","message":"One of the mandatory parameter is missing."}

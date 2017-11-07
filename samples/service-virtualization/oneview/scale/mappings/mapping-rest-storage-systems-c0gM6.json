@@ -1,0 +1,22 @@
+{
+  "id" : "6bd83272-cc3c-3160-abb8-851a2a337a57",
+  "request" : {
+    "url" : "/rest/storage-systems?start=0&count=10",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-storage-systems-c0gM6.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:37 GMT",
+      "Server" : "Apache",
+      "ETag" : "2017-10-31T16:11:37.639Z",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=79",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "6bd83272-cc3c-3160-abb8-851a2a337a57"
+}

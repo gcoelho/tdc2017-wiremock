@@ -1,0 +1,20 @@
+{
+  "id" : "a01b8fda-c9b1-3d85-97ef-fdc64f1d227f",
+  "request" : {
+    "url" : "/rest/sessions",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "bodyFileName" : "body-rest-sessions-GlWXv.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:17 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Connection" : "close",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "a01b8fda-c9b1-3d85-97ef-fdc64f1d227f"
+}

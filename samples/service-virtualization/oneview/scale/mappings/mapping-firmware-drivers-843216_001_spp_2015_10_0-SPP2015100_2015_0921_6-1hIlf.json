@@ -1,0 +1,21 @@
+{
+  "id" : "53e51112-98c1-3f7b-af19-957593ad9ac0",
+  "request" : {
+    "url" : "/rest/firmware-drivers/843216_001_spp_2015_10_0-SPP2015100_2015_0921_6",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-firmware-drivers-843216_001_spp_2015_10_0-SPP2015100_2015_0921_6-1hIlf.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:32 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=82",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "53e51112-98c1-3f7b-af19-957593ad9ac0"
+}

@@ -1,0 +1,21 @@
+{
+  "id" : "d94efcaa-a87e-39bd-bcb6-b00f586d8de8",
+  "request" : {
+    "url" : "/rest/firmware-drivers/864794_001_spp-2016_04_0-SPP2016040_2016_0317_20",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-firmware-drivers-864794_001_spp-2016_04_0-SPP2016040_2016_0317_20-MNi5Z.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:31 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=83",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "d94efcaa-a87e-39bd-bcb6-b00f586d8de8"
+}

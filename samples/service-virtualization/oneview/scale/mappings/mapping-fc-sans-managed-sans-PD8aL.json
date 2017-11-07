@@ -1,0 +1,21 @@
+{
+  "id" : "7903c729-029d-3cc8-8800-48c5b0f68acd",
+  "request" : {
+    "url" : "/rest/fc-sans/managed-sans?start=0&count=250",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-fc-sans-managed-sans-PD8aL.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:39 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json; charset=utf-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=76",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "7903c729-029d-3cc8-8800-48c5b0f68acd"
+}

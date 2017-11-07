@@ -1,0 +1,21 @@
+{
+  "id" : "d436039a-671b-3860-9bce-d59615c98961",
+  "request" : {
+    "url" : "/rest/firmware-drivers?start=0&count=320",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-firmware-drivers-suicf.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:33 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=80",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "d436039a-671b-3860-9bce-d59615c98961"
+}

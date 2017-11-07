@@ -1,0 +1,19 @@
+{
+  "id" : "f77d5e17-e3ba-3f6a-a4e1-8c674612ecef",
+  "request" : {
+    "url" : "/rest/login-sessions",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 204,
+    "bodyFileName" : "body-rest-login-sessions-4gxBh.txt",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:13:40 GMT",
+      "Server" : "Apache",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=99",
+      "Connection" : "Keep-Alive"
+    }
+  },
+  "uuid" : "f77d5e17-e3ba-3f6a-a4e1-8c674612ecef"
+}

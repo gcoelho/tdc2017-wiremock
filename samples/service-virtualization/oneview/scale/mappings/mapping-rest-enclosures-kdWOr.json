@@ -1,0 +1,21 @@
+{
+  "id" : "28855fc3-b125-3fed-b059-959206f3c2df",
+  "request" : {
+    "url" : "/rest/enclosures?start=0&count=50",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-enclosures-kdWOr.json",
+    "headers" : {
+      "Date" : "Tue, 31 Oct 2017 16:11:32 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=81",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "28855fc3-b125-3fed-b059-959206f3c2df"
+}
