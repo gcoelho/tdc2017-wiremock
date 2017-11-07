@@ -1,7 +1,7 @@
 # Service Virtualization Environment
 
-As part of the [HPE OneView Global Dashboard](https://www.hpe.com/us/en/product-catalog/detail/pip.1009187269.html) project, an environment to simulate services has been developed. This environment has the following main purposes:
-* Allow developers to simulate a service that is not completed yet (allowing them to stay productive);
+As part of the [HPE OneView Global Dashboard](https://www.hpe.com/us/en/product-catalog/detail/pip.1009187269.html) project, an environment to simulate services has been developed. This environment has the following goals:
+* Allow developers to simulate a service that is not yet completed (allowing them to stay productive);
 * Build a stable and scalable integration testing environment;
 * Deploy as many services as needed to execute the application scaling tests.
 
@@ -25,7 +25,7 @@ Below are the technologies used to build the virtualization environment:
 
 ## Overall Environment Architecture
 
-The virtualization environment is composed of a virtual machine running Ubuntu Server 16.04 with Dnsmasq and Docker services running as native processes, while the other tools that complete the setup (NGINX and WireMock) are running as containers.
+The virtualization environment is composed of a virtual machine running Ubuntu Server 16.04 with Dnsmasq and Docker services running as native processes, while the other tools that complete the setup (NGINX and WireMock) run as containers.
 
 * Services running on the host VM
   * Dnsmasq: provides DNS capabilities.
@@ -47,15 +47,26 @@ The virtualization environment is composed of a virtual machine running Ubuntu S
 ![Overall Architecture](img/environment-architecture.png)
 
 ## Use Case #1 - Integration Test Environment
-The idea is to have a stable environment to avoid spurious failures in our integration testing jobs.
+The idea is to have a stable environment to avoid spurious failures when running the application integration tests.
 
-**TODO**
+The corresponding NGINX configuration to run enable this use case is as follows:
+```nginx
+server {
+    listen 443 ssl;
+    server_name "~^host-(?<port>\d{4}).oneview\.ovgd$";
+    ssl_certificate /etc/nginx/certs/nginx.crt;
+    ssl_certificate_key /etc/nginx/certs/nginx.key;
+    location / {
+        proxy_pass https://127.0.0.1:$port;
+    }
+}
+```
 
 ## Use Case #2 - Scale Environment
 
-**TODO**
+The OneView Global Dashboard application has some upper limits regarding the number of appliances it can manage. In order to test these limits, some WireMock containers are started containing mock files obtained recording the interaction between the OVGD and a deployed appliance. Combined with the extension to replace the original resource identifiers, it is possible to simulated the necessary environment. Another important aspect of this environment is the amount of computational resources consumed to deploy it. When using deployed VMs, a large amount of resources are consumed (CPU, memory and disk). Although we can not precisely identify how much is consumed when simulating the appliances with containers, it is clear that we drastically drop the amount of resources in order to run an equivalent environment.
 
-Numbers of a Oneview VM compared to a WireMock container running with the same set of files (ideally providing the same set of features)
+![OneView VM](img/oneview-vm-cpu100.png)
 
 ## Use Case #3 - SimpliVity Support Development
 
