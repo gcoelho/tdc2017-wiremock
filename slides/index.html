@@ -9,9 +9,9 @@
 
 	<link rel="stylesheet" href="css/reveal.css">
 	<link rel="stylesheet" href="css/theme/hpe.css">
-	
+
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	
+
 	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 </head>
@@ -63,7 +63,7 @@
 					- JavaScript stack
 						- HTML5, CSS, React / Redux, JavaScript
 						- NodeJS
-						- ElasticSearch
+						- Elasticsearch
 					- Backend exposes a REST API, UI consumes it
 					- 3 teams in different geographies
 					- Unit, integration and scale testing
@@ -80,24 +80,38 @@
 					- Jenkins jobs return +1 if tests complete successfully or -1 if fail
 
 					<i class="fa fa-arrow-circle-o-right"></i> 5 ~ 10 minutes feedback loop
-					
 				</script>
 			</section>
 
 			<section data-markdown>
 				<script type="text/template">
-					### Issues we have and how can we fix them
-					- Apresentar o problema com o ambiente
-					- Falhas recorrentes de builds causadas por problemas de infra Criação do CM para “manutenção” da infraestrutura (não resolveu o problema)
-					- Incluir diagrama mostrando como é utilizado Utilização de pacote XYZ (talvez seja superserver) para mockar testes de REST dentro do próprio teste
-					- Incluir um exemplo mostrando como fica o código
+					### Issues we had and how fixed (?) them
+					- Developers started to get rejected by integration test runs
+						- Code change looks good or not related to error
+						- Developers were unable to understand what happened reviewing Jenkins and application logs
+						- What we do? Just try again and start another test run!
+						- Surprise! It works now! <i class="fa fa-thumbs-o-up"></i>
+
+					<i class="fa fa-frown-o"></i> Increase on feedback loop, waste of time, lack of trust regarding test environment
 				</script>
 			</section>
 
 			<section data-markdown>
 				<script type="text/template">
-					### Automated Testing Stability and Team Confidence
-					<img src="images/testing-vs-confidence.png" width="60%">
+					### Issues we had and how fixed (?) them
+					- Futher investigations pointed to instability on test appliances
+						- Start developing scripts and tools to ensure (?) test environment is more stable
+						- Test environment becomes more complex to used
+						- Test code becomes more complex to write
+
+					<i class="fa fa-frown-o"></i> Even more instability on test environment
+				</script>
+			</section>
+	
+			<section data-markdown>
+				<script type="text/template">
+					### A picture is worth a thousand words ...
+					<img src="images/testing-vs-confidence.png" style="width:60%; text-align:center">
 				</script>
 			</section>
 
@@ -107,11 +121,11 @@
 					Desired characteristics
 					- Stability Test must be reliable!
 					- Speed I want to know as quickly as possible that I broke something!
-					
+
 					Important aspects to ensure test stability
 					- Environment-agnostic tests: tests should be independent and self-contained
 					- Test data: tests failing because expected data was not available in the system
-					
+
 					Speed
 					- Depending on external components can be slow (ex. requests sent to OneView)
 				</script>
@@ -122,53 +136,33 @@
 				<h2>Mock your APIs for fast, robust and comprehensive testing</h2>
 			</section>
 
-			<section>
-				<h2>
-					WireMock
-				</h2>
-				<ul>
-					<li>Simulator for HTTP-based APIs</li>
-					<li>Supports testing of edge cases and failure modes that the real API won't reliably produce</li>
-					<ul>
-						<li>We can even extend current API limitation: extend OneView scale limits</li>
-					</ul>
-					<li>Ability to inject faulty behavior (delay injection and faulty responses)</li>
-					<li>Because it’s fast it can reduce build time</li>
-					<li>Run within a Java application or as a standalone process (embedded Jetty)</li>
-					<li>Request Matching and Response Templating</li>
-					<ul>
-						<li>Match request URLs, methods, headers and bodies</li>
-					</ul>
-					<li>Record and Playback</li>
-					<ul>
-						<li>Get up and running quickly by capturing traffic to and from an existing API</li>
-						<li>Playback using captured traffic data</li>
-					</ul>
-				</ul>
+			<section data-markdown>
+				<script type="text/template">
+					### What is WireMock?
+					- Simulator for HTTP-based APIs
+					- Supports testing of edge cases and failure modes that the real API won't reliably produce
+						- We can even extend current API limitation (example: extend OneView scale limits)
+					- Because it’s fast it can reduce build time
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### WireMock Features
+					- Record and Playback
+						- Get up and running quickly by capturing traffic to and from an existing API
+						- Playback using captured traffic data
+					- Request Matching and Response Templating
+						- Match request URLs, methods, headers and bodies
+					- Ability to inject faulty behavior (delay injection and faulty responses)
+					- Run within a Java application or as a standalone process (embedded Jetty)
+				</script>
 			</section>
 
 			<section class="breakslide">
 				<h1>"Talk is cheap. Show me the code."</h1>
 				<h2>Linus Torvalds</h2>
-			</section>
-
-			<section class="breakslide">
-				<h1>WireMock Demo</h1>
 				<img src="images/demo.jpg">
-			</section>
-
-			<!-- Iniciar a demo com o trabalho desenvolvido rodando o WireMock Exemplo bobinho rodando o WireMock para graver requisição contra
-			o Google Deixar um exemplo mais “completo” com falhas etc pronto e só rodar o WireMock apontando para ele A aplicação
-			que vamos usar nesse caso é o CURL SEM FRESCURAS AQUI!!!! -->
-			<section data-markdown>
-				<script type="text/template">
-					### WireMock Record and Playback
-					- Web interface (http://localhost:8080/__admin/recorder)
-					- Java API
-					- WireMock REST API
-
-					Allow customizing what to be recorded
-				</script>
 			</section>
 
 			<section data-markdown>
@@ -189,6 +183,9 @@
 					- Stop recorder, mocks saved
 					- Start playback, develop your app
 					- Enhance mocks capturing new ones or hand writing your owns
+
+					<i class="fa fa-arrow-circle-o-right"></i> Allow testing edge / corner cases and failure modes
+					<br><i class="fa fa-arrow-circle-o-right"></i> Allow developing your app even if depended service does not exist or is incomplete
 				</script>
 			</section>
 
@@ -286,39 +283,42 @@
 				</ul>
 			</section>
 
-			<section data-markdown>
-				<script type="text/template">
-					### References
-
-					- [Slides / Sample code](https://github.com/gcoelho/tdc2017-wiremock)
-					- [WireMock](http://wiremock.org/)
-					- [Docker] (https://www.docker.com/)
-					- [NGINX] (https://www.nginx.com/)
-				</script>
+			<section>
+				<p style="text-align:center">Check slides, sample code and instructions
+					<br>
+					<a href="https://github.com/gcoelho/tdc2017-wiremock">
+						<img src="images/github.png">
+					</a>
+				</p>
 			</section>
 
 			<section>
-				<h3>Thanks!!</h3>
-				<table>
+				<table style="width:100%">
 					<tr>
 						<td style="text-align:left;vertical-align:center;">
 							Gustavo Coelho
-							<p style="font-size:30px">Software Engineer @ Hewlett Packard Enterprise</p>
+							<p style="font-size:30px">Software Engineer<br>Hewlett Packard Enterprise</p>
 							<p style="font-size:20px">
-								<br><i class="fa fa-envelope"></i> gcoelho@gcoelho.com
-								<br><i class="fa fa-twitter"></i> gafcoelho
-								<br><i class="fa fa-github"></i> github.com/gcoelho
+								<br>
+								<i class="fa fa-envelope"></i> gcoelho@gcoelho.com
+								<br>
+								<i class="fa fa-twitter"></i> gafcoelho
+								<br>
+								<i class="fa fa-github"></i> github.com/gcoelho
 							</p>
 						</td>
 					</tr>
 					<tr>
 						<td style="text-align:right;vertical-align:center;">
 							Luiz Svoboda
-							<p style="font-size:30px">Software Engineer @ Hewlett Packard Enterprise</p>
+							<p style="font-size:30px">Software Engineer<br>Hewlett Packard Enterprise</p>
 							<p style="font-size:20px">
-								<br>luizek@gmail.com <i class="fa fa-envelope"></i>
-								<br>luizsvoboda <i class="fa fa-twitter"></i>
-								<br>github.com/lhsvobodaj <i class="fa fa-github"></i>
+								<br>luizek@gmail.com
+								<i class="fa fa-envelope"></i>
+								<br>luizsvoboda
+								<i class="fa fa-twitter"></i>
+								<br>github.com/lhsvobodaj
+								<i class="fa fa-github"></i>
 							</p>
 						</td>
 					</tr>

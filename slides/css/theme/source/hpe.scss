@@ -93,18 +93,19 @@ $selectionBackgroundColor: rgba(0, 0, 0, 0.99);
 	box-shadow: none;
 }
 
-.breakslide {
-  background-color: $hpeSlate;
-}
-
-.breakslide h1 {
-  font-weight: bold;
-  font-size: 58px;
-  color: white;
-}
-
-.breakslide h2 {
-  font-weight: normal;
-  font-size: 40px;
-  color: white;
+.reveal .slides .breakslide  {
+  text-align: center;
+  vertical-align: top;
+  h1 {
+    font-weight: bold;
+    font-size: 45px;
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 40px;
+  }
+  p {
+    font-weight: normal;
+    font-size: 30px;
+  }
 }

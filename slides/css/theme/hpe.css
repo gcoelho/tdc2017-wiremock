@@ -333,15 +333,15 @@ body {
   border: none;
   box-shadow: none; }
 
-.breakslide {
-  background-color: #425563; }
-
-.breakslide h1 {
-  font-weight: bold;
-  font-size: 58px;
-  color: white; }
-
-.breakslide h2 {
-  font-weight: normal;
-  font-size: 40px;
-  color: white; }
+.reveal .slides .breakslide {
+  text-align: center;
+  vertical-align: top; }
+  .reveal .slides .breakslide h1 {
+    font-weight: bold;
+    font-size: 45px; }
+  .reveal .slides .breakslide h2 {
+    font-weight: normal;
+    font-size: 40px; }
+  .reveal .slides .breakslide p {
+    font-weight: normal;
+    font-size: 30px; }
