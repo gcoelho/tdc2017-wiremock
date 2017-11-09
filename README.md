@@ -1,4 +1,4 @@
-# Wiremock
+# WireMock
 Slides presented at The Developers Conference 2017 Porto Alegre, RS - Brazil
 
 DevTest Track
