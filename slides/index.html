@@ -22,15 +22,16 @@
 			<!-- <section data-background="css/theme/images/cover-image-01.jpg"> -->
 			<section data-background="images/hpe-server.png">
 				<img style="width: 300px" src="images/hpe-logo-white.png">
-				<br><br><br>
+				<br>
+				<br>
+				<br>
 				<h1 style="color:white;">WireMock</h1>
 				<h2 style="color:white;font-size: 30px">Deploying a reliable and scalable environment for integration testing</h2>
 				<br>
 				<p style="color:white;font-size: 20px">Luiz Hermes Svoboda Junior</p>
 				<p style="color:white;font-size: 20px">Gustavo Coelho</p>
-				<p style="color:white;font-size:15px">
-					November 10<sup>th</sup>, 2017
-				</p>
+				<p style="color:white;font-size:15px">November 10
+					<sup>th</sup>, 2017</p>
 			</section>
 
 			<section data-markdown>
@@ -46,8 +47,7 @@
 				<h3>OneView Global Dashboard</h3>
 				<div>
 					<div style="float:left; width:50%;">
-						<!-- <img src="css/theme/images/ovgd.png" style="border:2px solid black"> -->
-						<img src="images/ovgd.png"/>
+						<img src="images/ovgd.png" />
 					</div>
 					<div style="float:left; width:50%;">
 						<ul style="font-size:25px">
@@ -136,7 +136,7 @@
 			</section>
 
 			<section class="breakslide">
-				<img src="images/hpe-separator.png" style="width:100%;"/>
+				<img src="images/hpe-separator.png" style="width:100%;" />
 				<h1 style="text-align: left">WireMock</h1>
 				<h2 style="text-align: left">Mock your APIs for fast, robust and comprehensive testing</p>
 			</section>
@@ -146,7 +146,7 @@
 					### What is WireMock?
 					- Simulator for HTTP-based APIs
 					- Supports testing of edge cases and failure modes that the real API won't reliably produce
-						- We can even extend current API limitation (example: extend OneView scale limits)
+						- We can even extend current API limitation
 					- Because it’s fast it can reduce build time
 				</script>
 			</section>
@@ -291,9 +291,9 @@
 			<section>
 				<p style="text-align:center">Check slides, sample code and instructions
 					<br>
-					<a href="https://github.com/gcoelho/tdc2017-wiremock">
-						<img src="images/github.png">
-					</a>
+					<a href="https://goo.gl/i9Xjsb">https://goo.gl/i9Xjsbx</a>
+					<br>
+					<img src="images/github.png">
 				</p>
 			</section>
 
@@ -302,7 +302,8 @@
 					<tr>
 						<td style="text-align:left;vertical-align:center;">
 							Gustavo Coelho
-							<p style="font-size:30px">Software Engineer<br>Hewlett Packard Enterprise</p>
+							<p style="font-size:30px">Software Engineer
+								<br>Hewlett Packard Enterprise</p>
 							<p style="font-size:20px">
 								<br>
 								<i class="fa fa-envelope"></i> gcoelho@gcoelho.com
@@ -316,7 +317,8 @@
 					<tr>
 						<td style="text-align:right;vertical-align:center;">
 							Luiz Svoboda
-							<p style="font-size:30px">Software Engineer<br>Hewlett Packard Enterprise</p>
+							<p style="font-size:30px">Software Engineer
+								<br>Hewlett Packard Enterprise</p>
 							<p style="font-size:20px">
 								<br>luizek@gmail.com
 								<i class="fa fa-envelope"></i>
@@ -349,26 +351,11 @@
 		});
 	</script>
 
-	<style type="text/css">
-		#header-left {
-			position: absolute;
-			top: 5%;
-			left: 3%;
-			width: 90%;
-		}
-
-		#footer-left {
-			position: absolute;
-			bottom: 3%;
-			left: 3%;
-		}
-	</style>
-
-	<!-- 2. Create hidden header/footer <div> -->
+	<!-- Create hidden header/footer <div> -->
 	<div id="hidden" style="display:none;">
 		<div id="header">
-			<div id="header-left" style="border-bottom:2px solid rgb(1,169,130);"></div>
-			<div id="footer-left">
+			<div id="header-left" style="position: absolute;top: 5%;left: 3%;width: 94%;border-bottom:2px solid rgb(1,169,130);"></div>
+			<div id="footer-left" style="position: absolute;bottom: 3%;left: 3%;">
 				<img style="width: 100px" src="css/theme/images/hpe-logo.png">
 			</div>
 		</div>
@@ -376,7 +363,7 @@
 
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript">
-		// 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
+		// On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
 		var header = $('#header').html();
 		if (window.location.search.match(/print-pdf/gi)) {
 			Reveal.addEventListener('ready', function (event) {
