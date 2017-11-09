@@ -199,13 +199,14 @@
 			<section data-markdown>
 				<script type="text/template">
 					### Mocking OneView API
-					- An integrated management appliance that transforms HPE hardware into software-defined infrastructure.
+					- An integrated management appliance that transforms HPE hardware into software-defined infrastructure
 					- Multiple resource types (> 80) in the HPE OneView resource model
 						- For each resource, multiple REST endpoints
+						- OneView REST API<a href="http://h17007.www1.hpe.com/docs/enterprise/servers/oneview3.0/cic-api/en/api-docs/current/index.html">page</a>
 					- Several REST API versions (via `X-Api-Version` header)
 
 					<i class="fa fa-frown-o"></i> Mock everything is a daunting task
-					 (<a href="https://raw.githubusercontent.com/gcoelho/tdc2017-wiremock/master/samples/service-virtualization/oneview/scale/__files/body-firmware-drivers-871790_001_spp-2016_10_0-SPP2016100_2016_1015_191-P5bKn.json">see for yourself</a>)
+					 (<a href="https://raw.githubusercontent.com/gcoelho/tdc2017-wiremock/master/samples/service-virtualization/oneview/scale/__files/body-firmware-drivers-871790_001_spp-2016_10_0-SPP2016100_2016_1015_191-P5bKn.json" target="_blank">see for yourself</a>)
 				</script>
 			</section>
 
@@ -232,7 +233,7 @@
 						</ul>
 					</div>
 					<div style="float:left; width:50%;">
-						<img src="../samples/service-virtualization/img/oneview-vm-cpu100.png"/>
+						<img src="images/oneview-vm-cpu100.png"/>
 					</div>
 				</div>
 			</section>
@@ -241,7 +242,7 @@
 				<script type="text/template">
 					### HPE OneView + WireMock
 					- Painless creation of stub mappings by recording the interaction between OVGD and OneView
-					```
+					```bash
 					java -jar wiremock-standalone-2.10.1.jar --proxy-all="https://1.2.3.4" --record-mappings
 					```
 					- Optimized usage of computational resources
@@ -262,20 +263,25 @@
   ...
 }
 </pre>
-				<h2>- OVGD Reports module does not allow two resources with the same UUID</h2>
+				<h2>- OVGD Reports module does not allow multiple resources with the same UUID</h2>
 				<p style="font-size: 20px"><i class="fa fa-question-circle"></i> How to consistently replace these identifiers?</p>
 			</section>
 
 			<section data-markdown>
 				<script type="text/template">
 					### Stateful Behaviour via WireMock Extensions
+					<i class="fa fa-github"></i> <a href="https://github.com/gcoelho/tdc2017-wiremock/tree/master/samples/id-transformer" target="_blank">HPE OneView Resource ID Transformer</a>
+
 					- Transforming Responses
 						- `ResponseDefinitionTransformer`
 						- `ResponseTransformer`
 					- Custom Request Matchers
 						- `RequestMatcherExtension`
-					- There are still other extension options
-						- Post-serve action, admin API, listening for requests or raw traffic
+
+					There are also other extension options...
+
+					... post-serve action, admin API, listening for requests or raw traffic
+
 				</script>
 			</section>
 
@@ -288,39 +294,11 @@
 				versionado e principalmente reproduzível
 			</section>
 
-			<section>
-				<h2>
-					<strong>Integration Testing Environment Approaches</strong>
-				</h2>
-				Set of “permanent” containers
-				<ul>
-					<li>Set of containers pre-configured (as many as needed)</li>
-					<li>Each container with a set of configurations</li>
-					<ul>
-						<li>OneView with storage test requirements</li>
-						<li>OneView with SPP bundle test requirements</li>
-						<li>HC380 (Phoenix)</li>
-						<li>HC380 (Hellfire)</li>
-					</ul>
-					<li>Real/Simulated appliances can also be available</li>
-				</ul>
-			</section>
-
-			<section>
-				<h2>
-					<strong>Integration Testing Environment Approaches</strong>
-				</h2>
-				Container on-demand
-				<ul>
-					<li>Tests have their Wiremock files “embedded”</li>
-					<li>Containers are created/started dinamically before the test execution</li>
-					<li>Real/Simulated appliances can also be available</li>
-				</ul>
-			</section>
-
 			<section data-markdown>
 				<script type="text/template">
-					### Final Thoughts
+					### Takeaways
+					- WireMock is not a replacement to tests with the actual service
+					- Ensure your test strategy will drive you towards the <a href="https://martinfowler.com/bliki/TestPyramid.html" target="_blank">test pyramid</a>
 					...
 				</script>
 			</section>
@@ -328,7 +306,7 @@
 			<section>
 				<p style="text-align:center">Check slides, sample code and instructions
 					<br>
-					<a href="https://goo.gl/i9Xjsb">https://goo.gl/i9Xjsbx</a>
+					<a href="https://goo.gl/i9Xjsb" target="_blank">https://goo.gl/i9Xjsbx</a>
 					<br>
 					<img src="images/github.png">
 				</p>
