@@ -134,7 +134,7 @@
 			<section class="breakslide">
 				<img src="images/hpe-separator.png" style="width:100%;" />
 				<h1 style="text-align: left">WireMock</h1>
-				<h2 style="text-align: left">Mock your APIs for fast, robust and comprehensive testing</p>
+				<h2 style="text-align: left">Mock APIs for fast, robust and comprehensive testing</p>
 			</section>
 
 			<section data-markdown>
@@ -191,49 +191,101 @@
 			</section>
 
 			<section class="breakslide">
-				<h1>WireMock resultados obtidos</h1>
-				<h2>Destacar os itens que colocamos na submissão como resultados desse trabalho</h2>
+				<img src="images/hpe-separator.png" style="width:100%;"/>
+				<h1 style="text-align: left">WireMock</h1>
+				<h2 style="text-align: left">Results of WireMock applied to OVGD</p>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### Mocking OneView API
+					- An integrated management appliance that transforms HPE hardware into software-defined infrastructure.
+					- Multiple resource types (> 80) in the HPE OneView resource model
+						- For each resource, multiple REST endpoints
+					- Several REST API versions (via `X-Api-Version` header)
+
+					<i class="fa fa-frown-o"></i> Mock everything is a daunting task
+					 (<a href="https://raw.githubusercontent.com/gcoelho/tdc2017-wiremock/master/samples/service-virtualization/oneview/scale/__files/body-firmware-drivers-871790_001_spp-2016_10_0-SPP2016100_2016_1015_191-P5bKn.json">see for yourself</a>)
+				</script>
 			</section>
 
 			<section>
-				<h2>
-					<strong>falando sobre WireMock</strong>
-				</h2>
-				<ul>
-					<li>Exemplificar menor numero de recursos</li>
-					<ul>
-						<li>Pegar uma foto dos numeros do ambiente real</li>
-						<li>Cenário com OneView ou com HC380?</li>
-						<ul>
-							<li>Entendemos que com OneView os números seriam melhores mas não é o ambiente que temos – rodar com ambos indicando que
-								com o OneView temos o desafio do RabbitMQ?</li>
+				<h3>HPE OneView Deployment Environment</h3>
+				<div>
+					<div style="float:left; width:50%;">
+						<ul style="font-size:25px">
+							<li>OneView runs in a virtualized environment</li>
+								<ul style="font-size:20px">
+									<li>Real hardware for development is expensive</li>
+								</ul>
+							<li>High resource consumption</li>
+								<ul style="font-size:20px">
+									<li>CPU, memory and disk</li>
+									<li>Embeds a whole simulated data center within the same VM</li>
+									<li>VM boot time ~15 minutes</li>
+								</ul>
+							<li>Lack of stability</li>
+								<ul style="font-size:20px">
+									<li>Usage of unreleased versions</li>
+									<li>Running on a non compliant environment</li>
+								</ul>
 						</ul>
-						<li>RESULTADOS</li>
-					</ul>
-				</ul>
-				ADICIONAR O QUE MAIS ACHARMOS RELEVANTE
+					</div>
+					<div style="float:left; width:50%;">
+						<img src="../samples/service-virtualization/img/oneview-vm-cpu100.png"/>
+					</div>
+				</div>
 			</section>
 
-			<section class="breakslide">
+			<section data-markdown>
+				<script type="text/template">
+					### HPE OneView + WireMock
+					- Painless creation of stub mappings by recording the interaction between OVGD and OneView
+					```
+					java -jar wiremock-standalone-2.10.1.jar --proxy-all="https://1.2.3.4" --record-mappings
+					```
+					- Optimized usage of computational resources
+					    - VM X container
+
+					<i class="fa fa-question-circle"></i> How to simulate stateful behaviour?
+				</script>
+			</section>
+
+			<section>
+				<h3>HPE OneView Resource Identifiers (UUID)</h3>
+				<h2>- OneView uses an universally unique identifier to identify each resource</h2>
+<pre style="font-size: 16px;">
+{
+  ...
+  "serverProfileUri": "/rest/server-profiles/0d70e692-812a-40b4-ba45-68b6ddd399c0",
+  "serverGroupUri": "/rest/enclosure-groups/779ccfce-d8ac-41b0-8930-df7a5dd248b5",
+  ...
+}
+</pre>
+				<h2>- OVGD Reports module does not allow two resources with the same UUID</h2>
+				<p style="font-size: 20px"><i class="fa fa-question-circle"></i> How to consistently replace these identifiers?</p>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### Stateful Behaviour via WireMock Extensions
+					- Transforming Responses
+						- `ResponseDefinitionTransformer`
+						- `ResponseTransformer`
+					- Custom Request Matchers
+						- `RequestMatcherExtension`
+					- There are still other extension options
+						- Post-serve action, admin API, listening for requests or raw traffic
+				</script>
+			</section>
+
+			<section>
 				<h1>WireMock DEMO OVGD</h1>
 				Iniciar a demo com o trabalho desenvolvido rodando o WireMock Serviços do GD rodando (já startados pois UI pode demorar)
 				Mostrar um exemplo dos nossos testes e que não há referência para wiremock Exibir a estrutura de pastas e confguração
 				do wiremock Abrir a UI do GD e iniciar a execução Ouvintes podem ver coisas acontecendo no GD Mostrar os logs console
 				do wiremock Destacar que a aplicação, teste e configuração do ambiente de testes (wiremock) estão no git  portanto tudo
 				versionado e principalmente reproduzível
-			</section>
-
-			<section>
-				<h2>
-					<strong>trabalhos futuros</strong>
-				</h2>
-				<ul>
-					<li>Incluir aqui questão sobre como rodar os mocks: Containers estáticos VS dinâmicos (criados no momento do teste)</li>
-					<li>Mock de outros protocolos: Exemplo: SCMB do Oneview</li>
-					<li>Consistência de UUID: Como gerar randomizção e garantir consistência de identificadores</li>
-					<li>Injeção de falhas</li>
-				</ul>
-				ADICIONAR O QUE MAIS ACHARMOS RELEVANTE
 			</section>
 
 			<section>
@@ -266,22 +318,11 @@
 				</ul>
 			</section>
 
-			<section>
-				<h2>
-					<strong>Pending issues</strong>
-				</h2>
-				<ul>
-					<li>(OneView) SCMB / MSMB</li>
-					<ul>
-						<li>Install RabbitMQ (rabbitmq-server) in the Docker container</li>
-					</ul>
-				</ul>
-				<ul>
-					<li>(HC380) WebSocket</li>
-					<ul>
-						<li>mock-socket: Javascript mocking library for websockets and socket.io</li>
-					</ul>
-				</ul>
+			<section data-markdown>
+				<script type="text/template">
+					### Final Thoughts
+					...
+				</script>
 			</section>
 
 			<section>
