@@ -1,0 +1,21 @@
+{
+  "id" : "f82d5ce2-ebd1-3333-83f6-f422c0c621e3",
+  "request" : {
+    "url" : "/rest/storage-volumes?start=0&count=250",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-storage-volumes-6MuFv.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:39 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json; charset=utf-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=87",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "f82d5ce2-ebd1-3333-83f6-f422c0c621e3"
+}

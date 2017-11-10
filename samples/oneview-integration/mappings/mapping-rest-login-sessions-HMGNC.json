@@ -1,0 +1,26 @@
+{
+  "id" : "bb5d4ccf-af81-39b8-99a2-e84227ef2c12",
+  "request" : {
+    "url" : "/rest/login-sessions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"userName\":\"administrator\",\"password\":\"hpvse123\",\"authLoginDomain\":\"Local\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-login-sessions-HMGNC.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:28 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=100",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "bb5d4ccf-af81-39b8-99a2-e84227ef2c12"
+}

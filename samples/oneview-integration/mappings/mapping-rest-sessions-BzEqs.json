@@ -1,0 +1,20 @@
+{
+  "id" : "dc7e2761-179a-3d05-adea-ced792b2cb8f",
+  "request" : {
+    "url" : "/rest/sessions",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 400,
+    "bodyFileName" : "body-rest-sessions-BzEqs.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:27 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Connection" : "close",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "dc7e2761-179a-3d05-adea-ced792b2cb8f"
+}

@@ -1,0 +1,21 @@
+{
+  "id" : "c9f1ede5-1626-3bf9-81ed-63e086bf15a8",
+  "request" : {
+    "url" : "/rest/certificates/client/rabbitmq/keypair/default",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-keypair-default-OjQbe.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:40 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=84",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "c9f1ede5-1626-3bf9-81ed-63e086bf15a8"
+}

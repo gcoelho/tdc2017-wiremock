@@ -1,0 +1,21 @@
+{
+  "id" : "320ac4ec-fc15-3eb7-9add-da61b1f7ac9b",
+  "request" : {
+    "url" : "/rest/fc-sans/device-managers?start=0&count=20",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-fc-sans-device-managers-R9ml2.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:38 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json; charset=utf-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=89",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "320ac4ec-fc15-3eb7-9add-da61b1f7ac9b"
+}

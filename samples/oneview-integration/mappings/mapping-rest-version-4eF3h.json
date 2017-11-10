@@ -1,0 +1,21 @@
+{
+  "id" : "4b50b12d-327d-3d7c-8749-8368bde552c2",
+  "request" : {
+    "url" : "/rest/version",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-version-4eF3h.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:30 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=99",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "4b50b12d-327d-3d7c-8749-8368bde552c2"
+}

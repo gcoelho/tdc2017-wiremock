@@ -1,0 +1,21 @@
+{
+  "id" : "d57de8fe-542e-38cc-9899-3c62c2176d94",
+  "request" : {
+    "url" : "/rest/alerts?start=0&count=640&filter=severity=%27Critical%27&filter=(alertState%20eq%20%27Active%27%20or%20alertState%20eq%20%27Locked%27)",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-alerts-79KFF.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:39 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=86",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "d57de8fe-542e-38cc-9899-3c62c2176d94"
+}

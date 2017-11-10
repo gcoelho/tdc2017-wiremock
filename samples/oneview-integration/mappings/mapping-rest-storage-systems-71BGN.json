@@ -1,0 +1,21 @@
+{
+  "id" : "a2f5173f-76ff-3f95-8c9c-27a17b435bda",
+  "request" : {
+    "url" : "/rest/storage-systems?start=0&count=10",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-storage-systems-71BGN.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:38 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json; charset=utf-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=91",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "a2f5173f-76ff-3f95-8c9c-27a17b435bda"
+}

@@ -1,0 +1,81 @@
+INTEGRATION TESTS GLOBAL SETUP
+Execution of integrationSetup.sh completed successfully
+Start GD node server
+Waiting for local GD node server up...
+-->Using user defined appliances:
+   -- Oneview addresses: 
+        16.125.106.198
+   -- HC380 addresses: 
+-->Check the state of each client appliance
+time cost: 1019ms
+-->Login to each client appliance
+-->Login to Target Global Dashboard: localhost:8020
+-->Check whether the current GD has no appliances
+-->Add 1 appliances to GD in parallel
+-->Appliance adding is complete
+----- Start Run Testing -----
+INTEGRATION TESTS GLOBAL SETUP EXIT
+-->Using another user defined OV for appliance related test cases
+   -- address: 172.17.0.2
+  TF36 /rest/global/appliances (OV) REST APIs - Admin user
+    TF136 POST /rest/global/appliances (OV) REST APIs
+      ✓ TC162 - POST /rest/global/appliances - add OV without customized name (4142ms)
+      ✓ TC226 - POST /rest/global/appliances - add appliance which already exists (387ms)
+      ✓ TC1177 - POST /rest/global/appliances - add appliance with invalid username (145ms)
+      ✓ TC1177 - POST /rest/global/appliances - add appliance with invalid password (137ms)
+      ✓ TC1177 - POST /rest/global/appliances - add appliance with invalid login domain (159ms)
+      ✓ TC780 - POST /rest/global/appliances - Content-Type non-json
+      ✓ TC779 - POST /rest/global/appliances - without Content-Type
+      ✓ TC778 - POST /rest/global/appliances - body with nothing
+      ✓ TC777 - POST /rest/global/appliances - with no certificate
+      ✓ TC776 - POST /rest/global/appliances/{{UUID}}
+    TF138 PATCH /rest/global/appliances (OV) REST APIs
+      ✓ TC159 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - invalid auth header
+      ✓ TC175 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - missing X-API-Version
+      ✓ TC173 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - wrong X-API-Version smaller than 300
+      ✓ TC173 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - wrong X-API-Version larger than 300
+      ✓ TC234 - Reconnect - OV - PATCH /rest/global/appliances/{{UUID}} - reconnect OV with invalid username (63ms)
+      ✓ TC234 - Reconnect - OV - PATCH /rest/global/appliances/{{UUID}} - reconnect OV with invalid password (52ms)
+      ✓ TC234 - Reconnect - OV - PATCH /rest/global/appliances/{{UUID}} - reconnect OV with invalid login domain (67ms)
+      ✓ TC239 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - reconnect appliance without certificate
+      ✓ TC1181 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - missing auth header
+      ✓ TC819 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - without Content-Type
+      ✓ TC815 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - wrong Content-Type
+      ✓ TC814 - Reconnect - PATCH /rest/global/appliances/{{UUID}} - with no body
+      ✓ TC813 - Reconnect - PATCH /rest/global/appliances{{UUID}} - with no uuid
+      ✓ TC152 - Reconnect - OV - PATCH /rest/global/appliances/{{UUID}} - reconnect OV with valid information (2152ms)
+    TF135 GET /rest/global/appliances (OV) REST APIs
+      ✓ TC804 - OV - GET /rest/global/appliances/{{UUID}} - get special OV appliance information
+      ✓ TC803 - GET /rest/global/appliances/{{UUID}} - invalid UUID
+      ✓ TC801 - GET /rest/global/appliances/{{UUID}} - missing auth header
+      ✓ TC799 - GET /rest/global/appliances/{{UUID}} - invalid auth header
+      ✓ TC798 - GET /rest/global/appliances/{{UUID}} - wrong X-API-Version smaller than 300
+      ✓ TC798 - GET /rest/global/appliances/{{UUID}} - wrong X-API-Version larger than 300
+      ✓ TC796 - GET /rest/global/appliances/{{UUID}} - missing X-API-Version
+      ✓ TC795 - GET /rest/global/appliances - missing auth header
+      ✓ TC794 - GET /rest/global/appliances - invalid auth header
+      ✓ TC793 - GET /rest/global/appliances - wrong X-API-Version smaller than 300
+      ✓ TC793 - GET /rest/global/appliances - wrong X-API-Version larger than 300
+      ✓ TC792 - GET /rest/global/appliances - missing X-API-Version
+      ✓ TC791 - GET /rest/global/appliances?count=not 0 number
+      ✓ TC790 - GET /rest/global/appliances?count=0
+      ✓ TC789 - GET /rest/global/appliances - get appliances
+      ✓ TC787 - GET /rest/global/appliances?count=-1
+      ✓ TC786 - GET /rest/global/appliances?count={{number}}&start={{number}}
+    TF137 DELETE /rest/global/appliances (OV) REST APIs
+      ✓ TC817 - DELETE /rest/global/appliances/{UUID} - Invalid UUID
+      ✓ TC816 - DELETE /rest/global/appliances/{{UUID}} - missing auth header
+      ✓ TC800 - DELETE /rest/global/appliances/{{UUID}} - invalid auth header
+      ✓ TC784 - DELETE /rest/global/appliances
+      ✓ TC782 - DELETE /rest/global/appliances/{{UUID}} - wrong X-API-Version smaller than 300
+      ✓ TC782 - DELETE /rest/global/appliances/{{UUID}} - wrong X-API-Version larger than 300
+      ✓ TC781 - DELETE /rest/global/appliances/{{UUID}} - missing X-API-Version
+      ✓ TC818 - OV - DELETE /rest/global/appliances/{{UUID}} - remove OV (7119ms)
+
+  TF36 /rest/global/appliances (OV) REST APIs - Operator user @noLocal !
+    - TC875 - POST /rest/global/appliances - LUM - Operator add appliances
+    - TC876 - DELETE /rest/global/appliances/{{UUID}} - LUM - Operator remove appliances
+
+
+  49 passing (53s)
+  2 pending

@@ -1,0 +1,21 @@
+{
+  "id" : "560b1776-01aa-3782-a10c-1a96203c6f49",
+  "request" : {
+    "url" : "/rest/appliance/network-interfaces",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-appliance-network-interfaces-7F9FD.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:31 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=98",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "560b1776-01aa-3782-a10c-1a96203c6f49"
+}

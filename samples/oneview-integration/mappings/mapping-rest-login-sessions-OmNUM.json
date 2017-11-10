@@ -1,0 +1,25 @@
+{
+  "id" : "d36931bf-d13f-3596-8085-bb1705f275c4",
+  "request" : {
+    "url" : "/rest/login-sessions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"userName\":\"administrator\",\"password\":\"hpvse123invalid\",\"authLoginDomain\":\"local\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 400,
+    "bodyFileName" : "body-rest-login-sessions-OmNUM.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:52 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Connection" : "close",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "d36931bf-d13f-3596-8085-bb1705f275c4"
+}

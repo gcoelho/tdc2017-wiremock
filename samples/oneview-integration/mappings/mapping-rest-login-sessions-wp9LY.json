@@ -1,0 +1,26 @@
+{
+  "id" : "4100a33c-e551-3d82-9247-a98f95851e78",
+  "request" : {
+    "url" : "/rest/login-sessions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"userName\":\"administratorinvalid\",\"password\":\"hpvse123invalid\",\"authLoginDomain\":\"invalid\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 404,
+    "bodyFileName" : "body-rest-login-sessions-wp9LY.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:50 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=100",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "4100a33c-e551-3d82-9247-a98f95851e78"
+}

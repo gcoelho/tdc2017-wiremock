@@ -1,0 +1,21 @@
+{
+  "id" : "c857bbeb-10b2-377f-adfa-44fa7c06be74",
+  "request" : {
+    "url" : "/rest/appliance/nodeinfo/version",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-nodeinfo-version-sc3IT.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:26 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=100",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "c857bbeb-10b2-377f-adfa-44fa7c06be74"
+}

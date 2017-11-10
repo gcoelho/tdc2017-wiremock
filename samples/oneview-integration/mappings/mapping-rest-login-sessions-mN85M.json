@@ -1,0 +1,26 @@
+{
+  "id" : "2fce69f6-998b-30b6-a92e-cb7644bbfee8",
+  "request" : {
+    "url" : "/rest/login-sessions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"userName\":\"administrator\",\"password\":\"hpvse123\",\"authLoginDomain\":\"local\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-login-sessions-mN85M.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:54 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=99",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "2fce69f6-998b-30b6-a92e-cb7644bbfee8"
+}

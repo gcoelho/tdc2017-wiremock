@@ -1,0 +1,22 @@
+{
+  "id" : "53eef529-be6e-325c-816c-31b8160c10dc",
+  "request" : {
+    "url" : "/rest/server-hardware?start=0&count=50",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-server-hardware-VnKbC.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:34 GMT",
+      "Server" : "Apache",
+      "ETag" : "1510313494283",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=96",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "53eef529-be6e-325c-816c-31b8160c10dc"
+}

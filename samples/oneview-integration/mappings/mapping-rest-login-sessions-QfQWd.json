@@ -1,0 +1,26 @@
+{
+  "id" : "b4f0caa8-8785-3b85-b1a8-202878713699",
+  "request" : {
+    "url" : "/rest/login-sessions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"userName\":\"administrator\",\"password\":\"hpvse123\",\"authLoginDomain\":\"invalid\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 404,
+    "bodyFileName" : "body-rest-login-sessions-QfQWd.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:53 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=100",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "b4f0caa8-8785-3b85-b1a8-202878713699"
+}

@@ -1,0 +1,25 @@
+{
+  "id" : "6e78b0a7-f68d-33e2-a19a-b302582f5fd8",
+  "request" : {
+    "url" : "/rest/login-sessions",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\"userName\":\"administratorinvalid\",\"password\":\"hpvse123\",\"authLoginDomain\":\"local\"}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 400,
+    "bodyFileName" : "body-rest-login-sessions-K9jL4.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:51 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Connection" : "close",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "6e78b0a7-f68d-33e2-a19a-b302582f5fd8"
+}

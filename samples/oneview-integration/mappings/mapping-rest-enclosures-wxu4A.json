@@ -1,0 +1,21 @@
+{
+  "id" : "d51feb63-665e-3f85-ba37-bc2ccbea1d68",
+  "request" : {
+    "url" : "/rest/enclosures?start=0&count=50",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-rest-enclosures-wxu4A.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:35 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=93",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "d51feb63-665e-3f85-ba37-bc2ccbea1d68"
+}

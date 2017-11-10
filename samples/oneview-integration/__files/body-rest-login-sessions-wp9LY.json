@@ -1,0 +1,1 @@
+{"errorSource":"authLoginDomain","nestedErrors":[],"details":"Unable to authenticate. The specified enterprise directory is not found.","recommendedActions":["Verify that a valid enterprise directory is configured in the appliance."],"data":{},"errorCode":"AUTHN_AUTH_FAIL_LOGINDOMAINNOTFOUND","message":"Unable to authenticate.\nResource not found, ID/URI = invalid."}

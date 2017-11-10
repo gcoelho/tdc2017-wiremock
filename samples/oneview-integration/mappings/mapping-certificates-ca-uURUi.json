@@ -1,0 +1,21 @@
+{
+  "id" : "7fc284bb-49da-31e2-aa49-9af0f6210a18",
+  "request" : {
+    "url" : "/rest/certificates/ca",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-certificates-ca-uURUi.json",
+    "headers" : {
+      "Date" : "Fri, 10 Nov 2017 11:31:40 GMT",
+      "Server" : "Apache",
+      "Content-Type" : "application/json;charset=UTF-8",
+      "cache-control" : "no-cache",
+      "Keep-Alive" : "timeout=15, max=85",
+      "Connection" : "Keep-Alive",
+      "Transfer-Encoding" : "chunked"
+    }
+  },
+  "uuid" : "7fc284bb-49da-31e2-aa49-9af0f6210a18"
+}
