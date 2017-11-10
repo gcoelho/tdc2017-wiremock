@@ -1,0 +1,36 @@
+{
+  "id" : "01c3c53a-fcef-4866-865a-ffd1799e6566",
+  "name" : "repos_gcoelho_tdc2017-wiremock_issues",
+  "request" : {
+    "url" : "/repos/gcoelho/tdc2017-wiremock/issues",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "body" : "[\n  {\n    \"url\": \"https://api.github.com/repos/gcoelho/tdc2017-wiremock/issues/1\",\n    \"repository_url\": \"https://api.github.com/repos/gcoelho/tdc2017-wiremock\",\n    \"labels_url\": \"https://api.github.com/repos/gcoelho/tdc2017-wiremock/issues/1/labels{/name}\",\n    \"comments_url\": \"https://api.github.com/repos/gcoelho/tdc2017-wiremock/issues/1/comments\",\n    \"events_url\": \"https://api.github.com/repos/gcoelho/tdc2017-wiremock/issues/1/events\",\n    \"html_url\": \"https://github.com/gcoelho/tdc2017-wiremock/issues/1\",\n    \"id\": 272773078,\n    \"number\": 1,\n    \"title\": \"Complete slides until November 10th\",\n    \"user\": {\n      \"login\": \"gcoelho\",\n      \"id\": 449682,\n      \"avatar_url\": \"https://avatars1.githubusercontent.com/u/449682?v=4\",\n      \"gravatar_id\": \"\",\n      \"url\": \"https://api.github.com/users/gcoelho\",\n      \"html_url\": \"https://github.com/gcoelho\",\n      \"followers_url\": \"https://api.github.com/users/gcoelho/followers\",\n      \"following_url\": \"https://api.github.com/users/gcoelho/following{/other_user}\",\n      \"gists_url\": \"https://api.github.com/users/gcoelho/gists{/gist_id}\",\n      \"starred_url\": \"https://api.github.com/users/gcoelho/starred{/owner}{/repo}\",\n      \"subscriptions_url\": \"https://api.github.com/users/gcoelho/subscriptions\",\n      \"organizations_url\": \"https://api.github.com/users/gcoelho/orgs\",\n      \"repos_url\": \"https://api.github.com/users/gcoelho/repos\",\n      \"events_url\": \"https://api.github.com/users/gcoelho/events{/privacy}\",\n      \"received_events_url\": \"https://api.github.com/users/gcoelho/received_events\",\n      \"type\": \"User\",\n      \"site_admin\": false\n    },\n    \"labels\": [\n\n    ],\n    \"state\": \"open\",\n    \"locked\": false,\n    \"assignee\": {\n      \"login\": \"gcoelho\",\n      \"id\": 449682,\n      \"avatar_url\": \"https://avatars1.githubusercontent.com/u/449682?v=4\",\n      \"gravatar_id\": \"\",\n      \"url\": \"https://api.github.com/users/gcoelho\",\n      \"html_url\": \"https://github.com/gcoelho\",\n      \"followers_url\": \"https://api.github.com/users/gcoelho/followers\",\n      \"following_url\": \"https://api.github.com/users/gcoelho/following{/other_user}\",\n      \"gists_url\": \"https://api.github.com/users/gcoelho/gists{/gist_id}\",\n      \"starred_url\": \"https://api.github.com/users/gcoelho/starred{/owner}{/repo}\",\n      \"subscriptions_url\": \"https://api.github.com/users/gcoelho/subscriptions\",\n      \"organizations_url\": \"https://api.github.com/users/gcoelho/orgs\",\n      \"repos_url\": \"https://api.github.com/users/gcoelho/repos\",\n      \"events_url\": \"https://api.github.com/users/gcoelho/events{/privacy}\",\n      \"received_events_url\": \"https://api.github.com/users/gcoelho/received_events\",\n      \"type\": \"User\",\n      \"site_admin\": false\n    },\n    \"assignees\": [\n      {\n        \"login\": \"gcoelho\",\n        \"id\": 449682,\n        \"avatar_url\": \"https://avatars1.githubusercontent.com/u/449682?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/gcoelho\",\n        \"html_url\": \"https://github.com/gcoelho\",\n        \"followers_url\": \"https://api.github.com/users/gcoelho/followers\",\n        \"following_url\": \"https://api.github.com/users/gcoelho/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/gcoelho/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/gcoelho/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/gcoelho/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/gcoelho/orgs\",\n        \"repos_url\": \"https://api.github.com/users/gcoelho/repos\",\n        \"events_url\": \"https://api.github.com/users/gcoelho/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/gcoelho/received_events\",\n        \"type\": \"User\",\n        \"site_admin\": false\n      },\n      {\n        \"login\": \"lhsvobodaj\",\n        \"id\": 5245736,\n        \"avatar_url\": \"https://avatars0.githubusercontent.com/u/5245736?v=4\",\n        \"gravatar_id\": \"\",\n        \"url\": \"https://api.github.com/users/lhsvobodaj\",\n        \"html_url\": \"https://github.com/lhsvobodaj\",\n        \"followers_url\": \"https://api.github.com/users/lhsvobodaj/followers\",\n        \"following_url\": \"https://api.github.com/users/lhsvobodaj/following{/other_user}\",\n        \"gists_url\": \"https://api.github.com/users/lhsvobodaj/gists{/gist_id}\",\n        \"starred_url\": \"https://api.github.com/users/lhsvobodaj/starred{/owner}{/repo}\",\n        \"subscriptions_url\": \"https://api.github.com/users/lhsvobodaj/subscriptions\",\n        \"organizations_url\": \"https://api.github.com/users/lhsvobodaj/orgs\",\n        \"repos_url\": \"https://api.github.com/users/lhsvobodaj/repos\",\n        \"events_url\": \"https://api.github.com/users/lhsvobodaj/events{/privacy}\",\n        \"received_events_url\": \"https://api.github.com/users/lhsvobodaj/received_events\",\n        \"type\": \"User\",\n        \"site_admin\": false\n      }\n    ],\n    \"milestone\": null,\n    \"comments\": 0,\n    \"created_at\": \"2017-11-09T23:58:10Z\",\n    \"updated_at\": \"2017-11-10T00:00:22Z\",\n    \"closed_at\": null,\n    \"author_association\": \"OWNER\",\n    \"body\": \"Slides and sample code must be completed before November 10th to be presented at TDC Porto Alegre!!!\"\n  }\n]\n",
+    "headers" : {
+      "Server" : "GitHub.com",
+      "Date" : "Fri, 10 Nov 2017 00:21:57 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Status" : "200 OK",
+      "X-RateLimit-Limit" : "60",
+      "X-RateLimit-Remaining" : "48",
+      "X-RateLimit-Reset" : "1510275870",
+      "Cache-Control" : "public, max-age=60, s-maxage=60",
+      "Vary" : "Accept",
+      "ETag" : "\"6924edafb661911a7b0d12d01fbb4840\"",
+      "X-GitHub-Media-Type" : "github.v3; format=json",
+      "Access-Control-Expose-Headers" : "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
+      "Access-Control-Allow-Origin" : "*",
+      "Content-Security-Policy" : "default-src 'none'",
+      "Strict-Transport-Security" : "max-age=31536000; includeSubdomains; preload",
+      "X-Content-Type-Options" : "nosniff",
+      "X-Frame-Options" : "deny",
+      "X-XSS-Protection" : "1; mode=block",
+      "X-Runtime-rack" : "0.063118",
+      "X-GitHub-Request-Id" : "BD52:2FDA:2FBBD63:61C5F65:5A04F11F"
+    }
+  },
+  "uuid" : "01c3c53a-fcef-4866-865a-ffd1799e6566",
+  "persistent" : true
+}

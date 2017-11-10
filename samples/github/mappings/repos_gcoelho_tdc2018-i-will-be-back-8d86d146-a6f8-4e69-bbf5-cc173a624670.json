@@ -1,24 +1,21 @@
 {
-  "id" : "6450dbe8-24c9-4e8c-a722-61da7f2ddd76",
-  "name" : "repos_gcoelho_tdc2017-wiremock_issues",
+  "id" : "8d86d146-a6f8-4e69-bbf5-cc173a624670",
+  "name" : "repos_gcoelho_tdc2018-i-will-be-back",
   "request" : {
-    "url" : "/repos/gcoelho/tdc2017-wiremock/issues",
+    "url" : "/repos/gcoelho/tdc2018-I-will-be-back",
     "method" : "GET"
   },
   "response" : {
-    "status" : 200,
-    "body" : "[\n\n]\n",
+    "status" : 404,
+    "body" : "{\n  \"message\": \"Not Found\",\n  \"documentation_url\": \"https://developer.github.com/v3\"\n}\n",
     "headers" : {
-      "Date" : "Wed, 01 Nov 2017 18:08:33 GMT",
-      "Content-Type" : "application/json; charset=utf-8",
       "Server" : "GitHub.com",
-      "Status" : "200 OK",
+      "Date" : "Fri, 10 Nov 2017 00:22:14 GMT",
+      "Content-Type" : "application/json; charset=utf-8",
+      "Status" : "404 Not Found",
       "X-RateLimit-Limit" : "60",
-      "X-RateLimit-Remaining" : "52",
-      "X-RateLimit-Reset" : "1509563024",
-      "Cache-Control" : "public, max-age=60, s-maxage=60",
-      "Vary" : [ "Accept", "Accept-Encoding" ],
-      "ETag" : "\"98f0c1b396a4e5d54f4d5fe561d54b44\"",
+      "X-RateLimit-Remaining" : "47",
+      "X-RateLimit-Reset" : "1510275870",
       "X-GitHub-Media-Type" : "github.v3; format=json",
       "Access-Control-Expose-Headers" : "ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval",
       "Access-Control-Allow-Origin" : "*",
@@ -27,10 +24,10 @@
       "X-Content-Type-Options" : "nosniff",
       "X-Frame-Options" : "deny",
       "X-XSS-Protection" : "1; mode=block",
-      "X-Runtime-rack" : "0.026577",
-      "X-GitHub-Request-Id" : "F35C:1B54E:1977E9:2124C0:59FA0DA0"
+      "X-Runtime-rack" : "0.017996",
+      "X-GitHub-Request-Id" : "BD58:2FDA:2FBC7AA:61C7AF3:5A04F136"
     }
   },
-  "uuid" : "6450dbe8-24c9-4e8c-a722-61da7f2ddd76",
+  "uuid" : "8d86d146-a6f8-4e69-bbf5-cc173a624670",
   "persistent" : true
 }
