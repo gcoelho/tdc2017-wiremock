@@ -37,7 +37,7 @@
 					### Some background ...
 					- Brief overview of what we do
 					- How our CI environment looks like
-					- What issues we have and how can we fix them
+					- Issues we had and how we fixed (?) them
 				</script>
 			</section>
 
@@ -87,7 +87,7 @@
 
 			<section data-markdown>
 				<script type="text/template">
-					### Issues we had and how fixed (?) them
+					### Issues we had and how we fixed (?) them
 					- Developers started to get rejected by integration test runs
 						- Code change looks good or not related to error
 						- Developers were unable to understand what happened reviewing Jenkins and application logs
@@ -100,10 +100,10 @@
 
 			<section data-markdown>
 				<script type="text/template">
-					### Issues we had and how fixed (?) them
+					### Issues we had and how we fixed (?) them
 					- Futher investigations pointed to instability on test appliances
 						- Start developing scripts and tools to ensure (?) test environment is more stable
-						- Test environment becomes more complex to used
+						- Test environment becomes more complex to use
 						- Test code becomes more complex to write
 
 					<i class="fa fa-frown-o"></i> Even more instability on test environment
@@ -167,6 +167,7 @@
 			<section data-markdown>
 				<script type="text/template">
 					### Mocking GitHub API
+					<i class="fa fa-github"></i> <a href="https://github.com/gcoelho/tdc2017-wiremock/tree/master/samples/github" target="_blank">GitHub API mocking samples</a>
 					- Use case: developing an app to get statistics of a GH repository
 						- Mocked a few APIs (summary info, issues and commits)
 						- Mocked error situations
@@ -201,7 +202,7 @@
 					- Multiple resource types (> 80) in the HPE OneView resource model
 						- For each resource, multiple REST endpoints
 						- OneView REST API <a href="http://h17007.www1.hpe.com/docs/enterprise/servers/oneview3.0/cic-api/en/api-docs/current/index.html">page</a>
-					- Several REST API versions (via `X-Api-Version` header)
+					- Several REST API versions
 
 					<i class="fa fa-frown-o"></i> Mock everything is a daunting task
 					 (<a href="https://raw.githubusercontent.com/gcoelho/tdc2017-wiremock/master/samples/service-virtualization/oneview/scale/__files/body-firmware-drivers-871790_001_spp-2016_10_0-SPP2016100_2016_1015_191-P5bKn.json" target="_blank">see for yourself</a>)
@@ -238,13 +239,12 @@
 
 			<section data-markdown>
 				<script type="text/template">
-					### HPE OneView + WireMock
+					### Mocking HPE OneView using WireMock
 					- Painless creation of stub mappings by recording the interaction between OVGD and OneView
-					```bash
-					java -jar wiremock-standalone-2.10.1.jar --proxy-all="https://1.2.3.4" --record-mappings
-					```
-					- Optimized usage of computational resources
-					    - VM X container
+					
+					<i class="fa fa-desktop"></i> Adding a mocked OneView to Global Dashboard
+
+					<i class="fa fa-thumbs-o-up"></i> Result: Optimized usage of computational resources (VM vs Container)
 
 					<i class="fa fa-question-circle"></i> How to simulate stateful behaviour?
 				</script>
@@ -252,7 +252,7 @@
 
 			<section>
 				<h3>HPE OneView Resource Identifiers (UUID)</h3>
-				<h2>- OneView uses an universally unique identifier to identify each resource</h2>
+				<p>- OneView uses an universally unique identifier to identify each resource</p>
 				<pre style="font-size: 16px;">
 {
   ...
@@ -261,9 +261,8 @@
   ...
 }
 </pre>
-				<h2>- OVGD Reports module does not allow multiple resources with the same UUID</h2>
-				<p style="font-size: 20px">
-					<i class="fa fa-question-circle"></i> How to consistently replace these identifiers?</p>
+				<p>- OVGD Reports module does not allow multiple resources with the same UUID</p>
+				<p><i class="fa fa-question-circle"></i> How to consistently replace these identifiers?</p>
 			</section>
 
 			<section data-markdown>
@@ -288,8 +287,8 @@
 				<script type="text/template">
 					### Service Virtualization Environment
 					<i class="fa fa-github"></i> <a href="https://github.com/gcoelho/tdc2017-wiremock/tree/master/samples/service-virtualization" target="_blank">Deploying a reliable and scalable environment for integration testing</a>
-
-					- Key Technologies
+					- Solution to build a scalable integration environment
+					- Key technologies
 						- Dnsmasq: network infrastructure functionalities (DNS and DHCP)
 						- Docker: platform to run application isolated in a container
 						- NGINX: open source web server and reverse proxy
@@ -308,9 +307,9 @@
 			<section data-markdown>
 				<script type="text/template">
 					### How to access the virtualized service?
-					DNS + NGINX
+					Dnsmasq + NGINX
 
-					HPE OneView appliances example:
+					NGINX configuration for HPE OneView appliances
 					```nginx
 						server {
 						    listen 443 ssl;
@@ -330,13 +329,22 @@
 					### NGINX Request Routing
 
 					<img src="images/nginx-routing.png">
+					<br><i class="fa fa-desktop"></i> Adding a mocked OneView to Global Dashboard
 				</script>
+			</section>
+
+			<section class="breakslide">
+				<img src="images/hpe-separator.png" style="width:100%;" />
+				<h1 style="text-align: left">Conclusion</h1>
+				<h2 style="text-align: left">Integration Testing Environment Results</p>
 			</section>
 
 			<section data-markdown>
 				<script type="text/template">
 					### Integration Testing Environment Results
-					- Stability: reduced spurious failures occurrences from **10~13% to 0~5%**
+					**Disclaimer**: Proposed solution is under evaluation before going to production
+
+					- Stability: initial results demonstrate noticeable less spurious failures
 					- Performance: integration test suite runs **~60% faster**
 					- Environment-agnostic: integration tests can run in *any machine*
 					- Test data: available in the project repository
@@ -366,7 +374,7 @@
 						- Whenever possible, test a particular feature at the lowest level
 					- When should I use mocks?
 						- Test depends on external components which is out of test control
-						- Failing test does not point broken code
+						- Failing test are not a result of broken code
 						- Running test suite takes a lot of time
 				</script>
 			</section>
