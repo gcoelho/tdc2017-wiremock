@@ -11,7 +11,6 @@
 	<link rel="stylesheet" href="css/theme/hpe.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 
-	<!-- Theme used for syntax highlighting of code -->
 	<link rel="stylesheet" href="lib/css/zenburn.css">
 </head>
 
@@ -19,7 +18,6 @@
 	<div class="reveal">
 		<div class="slides">
 
-			<!-- <section data-background="css/theme/images/cover-image-01.jpg"> -->
 			<section data-background="images/hpe-server.png">
 				<img style="width: 300px" src="images/hpe-logo-white.png">
 				<br>
@@ -191,7 +189,7 @@
 			</section>
 
 			<section class="breakslide">
-				<img src="images/hpe-separator.png" style="width:100%;"/>
+				<img src="images/hpe-separator.png" style="width:100%;" />
 				<h1 style="text-align: left">WireMock</h1>
 				<h2 style="text-align: left">Results of WireMock applied to OVGD</p>
 			</section>
@@ -216,24 +214,24 @@
 					<div style="float:left; width:50%;">
 						<ul style="font-size:25px">
 							<li>OneView runs in a virtualized environment</li>
-								<ul style="font-size:20px">
-									<li>Real hardware for development is expensive</li>
-								</ul>
+							<ul style="font-size:20px">
+								<li>Real hardware for development is expensive</li>
+							</ul>
 							<li>High resource consumption</li>
-								<ul style="font-size:20px">
-									<li>CPU, memory and disk</li>
-									<li>Embeds a whole simulated data center within the same VM</li>
-									<li>VM boot time ~15 minutes</li>
-								</ul>
+							<ul style="font-size:20px">
+								<li>CPU, memory and disk</li>
+								<li>Embeds a whole simulated data center within the same VM</li>
+								<li>VM boot time ~15 minutes</li>
+							</ul>
 							<li>Lack of stability</li>
-								<ul style="font-size:20px">
-									<li>Usage of unreleased versions</li>
-									<li>Running on a non compliant environment</li>
-								</ul>
+							<ul style="font-size:20px">
+								<li>Usage of unreleased versions</li>
+								<li>Running on a non compliant environment</li>
+							</ul>
 						</ul>
 					</div>
 					<div style="float:left; width:50%;">
-						<img src="images/oneview-vm-cpu100.png"/>
+						<img src="images/oneview-vm-cpu100.png" />
 					</div>
 				</div>
 			</section>
@@ -255,7 +253,7 @@
 			<section>
 				<h3>HPE OneView Resource Identifiers (UUID)</h3>
 				<h2>- OneView uses an universally unique identifier to identify each resource</h2>
-<pre style="font-size: 16px;">
+				<pre style="font-size: 16px;">
 {
   ...
   "serverProfileUri": "/rest/server-profiles/0d70e692-812a-40b4-ba45-68b6ddd399c0",
@@ -264,7 +262,8 @@
 }
 </pre>
 				<h2>- OVGD Reports module does not allow multiple resources with the same UUID</h2>
-				<p style="font-size: 20px"><i class="fa fa-question-circle"></i> How to consistently replace these identifiers?</p>
+				<p style="font-size: 20px">
+					<i class="fa fa-question-circle"></i> How to consistently replace these identifiers?</p>
 			</section>
 
 			<section data-markdown>
