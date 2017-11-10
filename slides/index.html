@@ -285,21 +285,78 @@
 				</script>
 			</section>
 
-			<section>
-				<h1>WireMock DEMO OVGD</h1>
-				Iniciar a demo com o trabalho desenvolvido rodando o WireMock Serviços do GD rodando (já startados pois UI pode demorar)
-				Mostrar um exemplo dos nossos testes e que não há referência para wiremock Exibir a estrutura de pastas e confguração
-				do wiremock Abrir a UI do GD e iniciar a execução Ouvintes podem ver coisas acontecendo no GD Mostrar os logs console
-				do wiremock Destacar que a aplicação, teste e configuração do ambiente de testes (wiremock) estão no git  portanto tudo
-				versionado e principalmente reproduzível
+			<section data-markdown>
+				<script type="text/template">
+					### Service Virtualization Environment
+					<i class="fa fa-github"></i> <a href="https://github.com/gcoelho/tdc2017-wiremock/tree/master/samples/service-virtualization" target="_blank">Deploying a reliable and scalable environment for integration testing</a>
+
+					- Key Technologies
+						- Dnsmasq: network infrastructure functionalities (DNS and DHCP)
+						- Docker: platform to run application isolated in a container
+						- NGINX: open source web server and reverse proxy
+						- WireMock: HTTP mock server tool
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### Virtualization Environment Architecture
+
+					<img src="images/environment-architecture.png">
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### How to access the virtualized service?
+					DNS + NGINX
+
+					HPE OneView appliances example:
+					```nginx
+						server {
+						    listen 443 ssl;
+						    server_name "~^host-(?<port>\d{4}).oneview\.ovgd$";
+						    ssl_certificate /etc/nginx/certs/nginx.crt;
+						    ssl_certificate_key /etc/nginx/certs/nginx.key;
+						    location / {
+						        proxy_pass https://127.0.0.1:$port;
+						    }
+						}
+					```
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### NGINX Request Routing
+
+					<img src="images/nginx-routing.png">
+				</script>
+			</section>
+
+			<section data-markdown>
+				<script type="text/template">
+					### Integration Testing Environment
+					- Reduced spurious failures occurrences (from 10~13% to 1~5%)
+					- Increase in build speed (reducing build time)
+					- 
+				</script>
 			</section>
 
 			<section data-markdown>
 				<script type="text/template">
 					### Takeaways
-					- WireMock is not a replacement to tests with the actual service
+					- WireMock is a service virtualization tool (or mock server)
+						- Enables devs to stay productive while the service is not complete
+						- Supports testing of edge cases
+						- Reduces the build time
+						- It is not a replacement for tests with the actual service
 					- Ensure your test strategy will drive you towards the <a href="https://martinfowler.com/bliki/TestPyramid.html" target="_blank">test pyramid</a>
-					...
+						- Whenever possible, test a particular feature at the lowest level
+					- When should I use mocks?
+						- Test depends on external components which is out of test control
+						- Failing test does not point broken code
+						- Running test suite takes a lot of time
 				</script>
 			</section>
 
