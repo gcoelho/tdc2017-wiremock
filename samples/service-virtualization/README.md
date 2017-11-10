@@ -72,7 +72,7 @@ The NGINX configuration to enable this use case is the same as the previous use 
 
 ## Use Case #3 - Support of an Unfinished Service
 
-The last use case whre we can apply the virtualization environment is to allow the simulation of an incomplete service. Based on the REST API specification of the service, developers can work using WireMock instances to simulate the service, while it is still being developed.
+The last use case where we can apply the virtualization environment is to allow the simulation of an incomplete service. Based on the REST API specification of the service, developers can work using WireMock instances to simulate the service, while it is still being developed.
 
 ## Request Routing
 Using NGINX as a reverse proxy, it is possible to send the HTTP request to a specific proxied server. One way to perform this routing without having to change the NGINX configuration each time a new service is deployed can be achieved by using a regular expression as `server_name`. Example: **~^service-(?<port>\d{4}).mydomain\.ovgd$**.

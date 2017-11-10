@@ -8,10 +8,10 @@ Below you will find a short description of the components that are mentioned in 
 Simulate several HPE OneView appliances to test the HPE OneView Global Dashboard reports module.
 
 ### HPE OneView
-The [HPE OneView](https://www.hpe.com/us/en/integrated-systems/software.html) is an HPE software that manages your infrastructure using a software-defined approach. To identify each resource available in the infrastructure, OneView generates an unique resource identifier (UUID) and assgins it to the resource.
+The [HPE OneView](https://www.hpe.com/us/en/integrated-systems/software.html) is an HPE software that manages your infrastructure using a software-defined approach. To identify each resource available in the infrastructure, OneView generates an unique resource identifier (UUID) and assigns it to the resource.
 
 ### HPE OneView Global Dashboard (HPE OVGD)
-The [HPE OneView Global Dashboard](https://www.hpe.com/us/en/product-catalog/detail/pip.1009187269.html) allows you to have a single view of your managed infrastructure, even when it is distributed accross several data centers.
+The [HPE OneView Global Dashboard](https://www.hpe.com/us/en/product-catalog/detail/pip.1009187269.html) allows you to have a single view of your managed infrastructure, even when it is distributed across several data centers.
 
 ### Requirement
 Each simulated HPE OneView instance **must** provide a different set of resource identifiers for its managed resources.
@@ -21,7 +21,7 @@ WireMock allows you to define extensions to its default request/response handlin
 
 To meet our use case, we developed the following extensions:
 * `ResourceIdResponseTransformer`: handles the resource identifier transformation at the response time. It generates new resource identifiers to replace the original ones.
-* `ResourceIdRequestMatcher`: matches the resquest and replaces the received resource identifier by the original value.
+* `ResourceIdRequestMatcher`: matches the request and replaces the received resource identifier by the original value.
 
 ## How to enable the extension
 
@@ -37,7 +37,7 @@ java -cp "wiremock-standalone-2.10.1.jar:<path>/tdc2017-wiremock/samples/id-tran
   --extensions com.hpe.wiremock.ResourceIdRequestMatcher,com.hpe.wiremock.ResourceIdResponseTransformer \
   --root-dir <path>/tdc2017-wiremock/samples/id-transformer/src/test/resources/oneview
 ```
-> Remeber to replace the `<path>` part of the command by the path to the folder where the repo has been cloned.
+> Remember to replace the `<path>` part of the command by the path to the folder where the repo has been cloned.
 
 Once the WireMock server is running, you can issue the following REST request:
 ```bash
