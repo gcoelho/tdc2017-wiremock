@@ -1,10 +1,15 @@
 # WireMock
 ## Deploying a reliable and scalable environment for integration testing
-Slides and content presented at The Developer's Conference 2017 Porto Alegre, RS - Brazil
+[Slides](https://gcoelho.github.io/tdc2017-wiremock/slides/) and content presented at The Developer's Conference 2017 Porto Alegre, RS - Brazil
 
 DevTest Track
 
 http://www.thedevelopersconference.com.br/tdc/2017/portoalegre/trilha-devtest
+
+## Content
+* [GitHub API mocking example](https://github.com/gcoelho/tdc2017-wiremock/tree/master/samples/github): Basic example about how to use WireMock to record and playback some endpoints of the GitHub REST API;
+* [Extending WireMock](https://github.com/gcoelho/tdc2017-wiremock/tree/master/samples/id-transformer): WireMock extension example. Include examples of a custom request matcher and a response definition transformer;
+* [Service Virtualization Environment](https://github.com/gcoelho/tdc2017-wiremock/tree/master/samples/service-virtualization): How to build an environment that can be used to simulate any HTTP service using WireMock.
 
 ## Authors
 **Gustavo Coelho**
