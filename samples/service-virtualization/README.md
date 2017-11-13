@@ -46,7 +46,8 @@ The virtualization environment is composed of a virtual machine running Ubuntu S
 
 ![Overall Architecture](img/environment-architecture.png)
 
-## Use Case #1 - Integration Test Environment
+## Use Cases
+### Use Case #1 - Integration Test Environment
 
 The idea is to have a stable environment to avoid spurious failures when running the application integration tests.
 
@@ -64,13 +65,13 @@ server {
 ```
 ![OneView VM Resources Consumption](img/oneview-vm-cpu100.png)
 
-## Use Case #2 - Scale Environment
+### Use Case #2 - Scale Environment
 
 The OneView Global Dashboard application has some limits regarding the number of appliances it can manage. In order to test these limits, some WireMock containers are started containing mock files obtained by recording the interaction between the OVGD and a deployed appliance VM. Combined with the WireMock extension to replace the original resource identifiers, it is possible to simulated the necessary scale environment. Another important aspect of this environment is the amount of computational resources consumed to deploy it. When using deployed VMs, a large amount of resources are consumed (CPU, memory and disk). Although we can not precisely determine how much is consumed when simulating the appliances with containers, it is clear that we drastically decrease the amount of resources necessary to run an equivalent environment.
 
 The NGINX configuration to enable this use case is the same as the previous use case.
 
-## Use Case #3 - Support of an Unfinished Service
+### Use Case #3 - Support of an Unfinished Service
 
 The last use case where we can apply the virtualization environment is to allow the simulation of an incomplete service. Based on the REST API specification of the service, developers can work using WireMock instances to simulate the service, while it is still being developed.
 
@@ -85,6 +86,6 @@ According to the example, HTTP requests can be routed to a service running on th
 * Add the VM IP address as a DNS server in your machine (or on the machine that needs to access this environment);
 * If you need to simulate a new service, copy the WireMock folders `mappings` and `__files` to the VM and place them inside a common directory;
 * Start a new WireMock container using the just created directory as the WireMock root dir (`--root-dir`);
-> Pay attention to use a different HTTP/HTTPS port(s).
+> Pay attention to use different HTTP/HTTPS port(s).
 
 Access your service using the hostname **service-WXYZ.mydomain.ovgd**.
